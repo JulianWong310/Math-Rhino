@@ -1,7 +1,6 @@
-# 🏆 AMC 8 Math Challenge: The Counting Master
+# 🏆Magic Rules & Factorial Thinking
 
-**Topic:** Magic Rules & Factorial Thinking
-**Student:** Julian
+
 
 ---
 
