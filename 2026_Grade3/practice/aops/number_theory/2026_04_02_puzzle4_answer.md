@@ -27,10 +27,8 @@
 ---
 
 ## ⚖️ Mission 3: The Triple Balance
-* Compare (1) $2\Delta + \square = 22$ and (3) $\Delta + \square + \bigcirc = 15 \Rightarrow \Delta - \bigcirc = 7$
-* Compare (3) $\Delta + \square + \bigcirc = 15$ and (2) $2\square + \bigcirc = 14 \Rightarrow \Delta - \square = 1$
-* **Triangle = 8, Square = 6, Circle = 1**
-    *(Verification: 8+8+6=22; 6+6+1=13; 8+6+1=15. Logic fits the design.)*
+* **Triangle = 8, Square = 6, Circle = 2**
+    *(Verification: 8+8+6=22; 6+6+2=14; 8+6+2=16. Logic fits the design.)*
 
 ---
 
