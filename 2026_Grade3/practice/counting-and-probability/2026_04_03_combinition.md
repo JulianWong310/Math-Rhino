@@ -1,4 +1,4 @@
-# 🧬 Mission 8: The "Secret Team" Formula (Combinations)
+# 🧬 The "Secret Team" Formula (Combinations)
 
 > **Julian's Mission:** You have $n$ total items (like LEGO bricks or Chess players), and you want to pick a team of $k$ items. 
 > **The Golden Rule:** In this mission, the **ORDER does NOT matter**. 
