@@ -186,4 +186,4 @@ This research is a collaborative effort involving original discovery, educationa
 
 ---
 
-*License:* This project is licensed under the MIT License - see the LICENSE file for details.
+*License:* This project is licensed under the MIT License - see the [LICENSE](https://github.com/JulianWong310/GitHub-Portfolio/blob/main/2026_Grade3/%E2%AD%90%E2%AD%90project/2026_04_11_julian_recurstable_law/LICENSE) file for details.
