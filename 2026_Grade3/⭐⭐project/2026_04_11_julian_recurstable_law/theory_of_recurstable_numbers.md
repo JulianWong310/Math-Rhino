@@ -86,7 +86,7 @@ if __name__ == "__main__":
 The term **"Recurstable"** is a portmanteau created by me, combining **Recursion** and **Stable**.
 
 ### Definition
-A Recurstable Number is a positive integer $B$ that satisfies two conditions for $n \geq 2$:
+A Recurstable Number is a positive integer $B$ such that for its powers $B^n$, where $n \geq 2$, the following two conditions are satisfied:
 1. **Terminal Stability (The Tail):** The last $k$ digits ($T$) remain constant.
 2. **Leading-Digit Recursion (The Head):** The leading digits $A_n$ follow a linear recurrence:
 $$A_n = B(A_{n-1}) + C$$
