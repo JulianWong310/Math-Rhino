@@ -170,8 +170,6 @@ To find a Recurstable Number, we only need to pass its two conditions:
 
 ---
 
----
-
 ## 10. Practical Application: The "Instant Identifier"
 The true power of Julian's Second Law is its **Predictive Capability**. 
 
