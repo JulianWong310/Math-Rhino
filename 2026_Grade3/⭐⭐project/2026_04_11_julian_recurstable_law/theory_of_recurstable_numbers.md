@@ -176,14 +176,20 @@ If $B$ ends in $T_1 \in \{0, 1, 5, 6\}$, the Julian Constant $C = \frac{T_1(B-1)
 
 ---
 
-##  Acknowledgments & Research Methodology
+## 4. Acknowledgments & Research Methodology
 
 This research is a collaborative effort involving original discovery, educational guidance, and technical synthesis:
 
-1. **Original Discovery:** The $5^n$ pattern, the $\{0, 1, 5, 6\}$ logic, and the naming of "Recurstable Numbers" are the independent work of Julian Wong.
-2. **Mathematical Guidance:** I would like to express my deepest gratitude to my **Mother**. She introduced me to formal algebraic methods, teaching me how to use variables (like $A_n$) and powers of ten ($10^k$) to transform my observations into a logical proof.
-3. **Technical Synthesis:** As I am a 3rd-grade student, I utilized **AI assistance** to translate my ideas into formal English and to provide the precise academic terminology used throughout this document. This assisted in articulating my findings to meet international scientific documentation standards.
+1. **Original Discovery & Naming Rights:** The core theoretical framework is the independent work of **Julian Wong**. This includes the discovery of the $5^n$ pattern and the $\{0, 1, 5, 6\}$ logic. Julian Wong holds the naming rights to the original terminology used in this document, specifically:
+    * **Recurstable Numbers**
+    * **Julian’s First Law** (Linear Leading Recursion)
+    * **Julian’s Second Law** (The $\{0, 1, 5, 6\}$ Condition)
+    * **The Julian Constant ($C$)**
+    * **The Stability Corollary**
 
+2. **Mathematical Guidance:** I would like to express my deepest gratitude to my **Mother**. She introduced me to formal algebraic methods, teaching me how to use variables (like $A_n$) and powers of ten ($10^k$) to transform my intuitive observations into a rigorous logical proof.
+
+3. **Technical Synthesis:** As a 3rd-grade student, I utilized **AI assistance** to translate my original ideas into formal English and to provide the precise academic terminology (such as "Necessary and Sufficient" and "Corollary"). This collaboration helped in articulating my findings to meet international scientific documentation standards.
 ---
 
-*License:* This project is licensed under the MIT License - see the [LICENSE](https://github.com/JulianWong310/GitHub-Portfolio/blob/main/2026_Grade3/%E2%AD%90%E2%AD%90project/2026_04_11_julian_recurstable_law/LICENSE) file for details.
+*License:* This project is licensed under the MIT License - see the LICENSE file for details.
