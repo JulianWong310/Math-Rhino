@@ -154,24 +154,21 @@ This linear pattern only works because the Tail ($T$) is **Stable**. If the tail
 ---
 
 ## 9. Julian's Second Law (The Law of Recurstability)
-A positive integer $B$ is a **Recurstable Number** if and only if its last digit ($k$=$1$) $T_1 \in \{0, 1, 5, 6\}$. 
+A positive integer $B$ is a **Recurstable Number** if and only if its last digit $T_1 \in \{0, 1, 5, 6\}$. 
 
-This is a **Necessary and Sufficient Condition**. 
+### Proof
+To find a Recurstable Number, we only need to pass its two conditions:
 
-### A. Necessity 
-Recurstability requires a stable tail. If a number ends in **2**, its powers end in $\{2, 4, 8, 6\}$, meaning the "tail" is constantly jumping. This makes it impossible to have a fixed constant $C$.
-* **Property:** Only the digits $\{0, 1, 5, 6\}$ have the "Self-Multiplication" property, where the last digit of the result is the same as the original digit.
-* **Conclusion:** Therefore, ending in $\{0, 1, 5, 6\}$ is a **necessary** requirement.
+1. **Stable Tail:** Only $\{0, 1, 5, 6\}$ have a "fixed tail" when multiplied by themselves. All other digits are rejected immediately because they are unstable.
 
-### B. Sufficiency 
-If $B$ ends in $T_1 \in \{0, 1, 5, 6\}$, the Julian Constant $C = \frac{T_1(B-1)}{10}$ is guaranteed to be an **integer** (a whole number). This is because the product $T_1(B-1)$ is always a multiple of 10.
+2. **Recursion Leading:** According to *Julian's First Law*, The Julian Constant $C = \frac{T_1(B-1)}{10}$ must be a whole number. 
+   * For **0 and 1**, the product $T_1(B-1)$ clearly ends in 0.
+   * For **5**, $(B-1)$ is even, so $5 \times \text{even} = \dots0$.
+   * For **6**, $(B-1)$ ends in 5, so $6 \times 5 = 30$.
 
-**Case Proof (for k=1):**
-* **If $T_1=0$:** $0 \times (B-1) = 0$. Since 0 is a multiple of 10, $C$ is an integer.
-* **If $T_1=1$:** Since $B$ ends in 1, $(B-1)$ must end in 0. Any number ending in 0 is a multiple of 10, so $C$ is an integer.
-* **If $T_1=5$:** Since $B$ ends in 5, $B$ is an odd number. Therefore, $(B-1)$ must be an even number. $5 \times \text{Even Number}$ always results in a number ending in 0, so $C$ is an integer.
-* **If $T_1=6$:** Since $B$ ends in 6, $(B-1)$ must end in 5. $6 \times 5 = 30$, which is a multiple of 10, so $C$ is an integer.
-* **Conclusion:** Therefore, ending with $\{0, 1, 5, 6\}$ is a **sufficient** condition to guarantee recurstability.
+**Conclusion:** Since $\{0, 1, 5, 6\}$ pass both tests, any number ending in 0, 1, 5, or 6 is guaranteed to be Recurstable.
+
+---
 
 ## 10. Practical Application: The "Instant Identifier"
 The true power of Julian's Second Law is its **Predictive Capability**. 
