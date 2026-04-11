@@ -63,18 +63,19 @@ if __name__ == "__main__":
 
 ##  Are there any similar numbers?
 
-| Order ($k$) | Base ($B$) | Stable Tail ($T$) | Julian Constant ($C$) | Recursive Formula |
-| :--- | :--- | :--- | :--- | :--- |
-| **1** | 6 | 6 | **3** | $A_n = 6(A_{n-1}) + 3$ |
-| **1** | 11 | 1 | **1** | $A_n = 11(A_{n-1}) + 1$ |
-| **2** | **5** | **25** | **1** | $A_n = 5(A_{n-1}) + 1$ |
-| **2** | 25 | 25 | **6** | $A_n = 25(A_{n-1}) + 6$ |
-| **2** | 26 | 76 | **19** | $A_n = 26(A_{n-1}) + 19$ |
-| **2** | 45 | 25 | **11** | $A_n = 45(A_{n-1}) + 11$ |
-| **2** | 76 | 76 | **57** | $A_n = 76(A_{n-1}) + 57$ |
-| **3** | 25 | 625 | **15** | $A_n = 25(A_{n-1}) + 15$ |
-| **3** | 376 | 376 | **141** | $A_n = 376(A_{n-1}) + 141$ |
-| **3** | 425 | 625 | **265** | $A_n = 425(A_{n-1}) + 265$ |
+| Order ($k$) | Base ($B$) | Stable Tail ($T$) | Constant ($C$) | Recursive Formula          |
+|:------------|:-----------|:------------------|:---------------|:---------------------------|
+| **1**       | 6          | 6                 | **3**          | $A_n = 6(A_{n-1}) + 3$     |
+| **1**       | 36         | 6                 | **21**         | $A_n = 36(A_{n-1}) + 21$   |
+| **1**       | 11         | 1                 | **1**          | $A_n = 11(A_{n-1}) + 1$    |
+| **2**       | **5**      | **25**            | **1**          | $A_n = 5(A_{n-1}) + 1$     |
+| **2**       | 25         | 25                | **6**          | $A_n = 25(A_{n-1}) + 6$    |
+| **2**       | 26         | 76                | **19**         | $A_n = 26(A_{n-1}) + 19$   |
+| **2**       | 45         | 25                | **11**         | $A_n = 45(A_{n-1}) + 11$   |
+| **2**       | 76         | 76                | **57**         | $A_n = 76(A_{n-1}) + 57$   |
+| **3**       | 25         | 625               | **15**         | $A_n = 25(A_{n-1}) + 15$   |
+| **3**       | 376        | 376               | **141**        | $A_n = 376(A_{n-1}) + 141$ |
+| **3**       | 425        | 625               | **265**        | $A_n = 425(A_{n-1}) + 265$ |
 
 
 ---
@@ -92,25 +93,7 @@ $$A_n = B(A_{n-1}) + C$$
 
 ---
 
-##  Julian's Second Law: The Law of Units-Digit Stability
-
-### 1. The Hypothesis
-Through independent logical reasoning, I concluded that a Recurstable Number ($B$) must end in **0, 1, 5, or 6**. 
-
-### 2. The Logic 
-My reasoning is based on the "Self-Multiplication" property. For any number to maintain a stable tail throughout its powers, the very last digit must be able to "survive" the multiplication without changing.
-
-If you multiply a digit by itself:
-* **5 times 5** ends in **5**
-* **6 times 6** ends in **6**
-* **1 times 1** ends in **1**
-* **0 times 0** ends in **0**
-
-If we picked a number like **4**, $4 \times 4 = 16$. The tail has already changed from a 4 to a 6. Once the units digit changes, the stability of the entire tail is broken. Therefore, only the set **{0, 1, 5, 6}** can ever be the seed for a Recurstable Number.
-
----
-
-## Julian's First Law: The General Formula
+## Julian's First Law & Julian Constant
 
 ### Step 1: Specific Observation (The Case of 5)
 (To describe this for any power, I used the algebraic notation taught by my mother to write the formulas for $n$ and $n-1$):
@@ -155,15 +138,41 @@ $$A_n = B \cdot A_{n-1} + \frac{T \cdot B - T}{10^k}$$
 
 ---
 
-### Step 4: Final Conclusion (The Core Discovery)
+##  Final Conclusion (The Core Discovery)
 
-1.  **The Julian Constant:** The "secret" number that controls the growth of the head is:
-    $$C = \frac{T \cdot B - T}{10^k}$$
+### 1.  **The Julian Constant:**  
 
-2.  **The Julian's First Law Equation:**
-    $$A_n = B \cdot A_{n-1} + C$$
+   $$C = \frac{T \cdot B - T}{10^k}$$ 
 
-3.  **Principle of Stability:** This linear pattern only works because the Tail ($T$) is **Stable**. If the tail were not stable, the constant $C$ would break, and the pattern would disappear!
+### 2.  **The Julian's First Law Equation:**
+
+   $$A_n = B \cdot A_{n-1} + C$$
+
+### 3. **Julian's First Law Corollary:** 
+This linear pattern only works because the Tail ($T$) is **Stable**. If the tail were not stable, the constant $C$ would break, and the pattern would disappear!
+
+---
+
+## Julian's Second Law (The Law of Recurstability)
+A positive integer $B$ is a **Recurstable Number** if and only if its last digit $T_1 \in \{0, 1, 5, 6\}$. 
+
+This is a **Necessary and Sufficient Condition**. 
+
+### A. Necessity 
+Recurstability requires a stable tail. If a number ends in **2**, its powers end in $\{2, 4, 8, 6\}$, meaning the "tail" is constantly jumping. This makes it impossible to have a fixed constant $C$.
+* **Property:** Only the digits $\{0, 1, 5, 6\}$ have the "Self-Multiplication" property, where the last digit of the result is the same as the original digit.
+* **Conclusion:** Therefore, ending in $\{0, 1, 5, 6\}$ is a **necessary** requirement.
+
+### B. Sufficiency 
+If $B$ ends in $T_1 \in \{0, 1, 5, 6\}$, the Julian Constant $C = \frac{T_1(B-1)}{10}$ is guaranteed to be an **integer** (a whole number). This is because the product $T_1(B-1)$ is always a multiple of 10.
+
+**Case Proof (for k=1):**
+* **If $T_1=0$:** $0 \times (B-1) = 0$. Since 0 is a multiple of 10, $C$ is an integer.
+* **If $T_1=1$:** Since $B$ ends in 1, $(B-1)$ must end in 0. Any number ending in 0 is a multiple of 10, so $C$ is an integer.
+* **If $T_1=5$:** Since $B$ ends in 5, $B$ is an odd number. Therefore, $(B-1)$ must be an even number. $5 \times \text{Even Number}$ always results in a number ending in 0, so $C$ is an integer.
+* **If $T_1=6$:** Since $B$ ends in 6, $(B-1)$ must end in 5. $6 \times 5 = 30$, which is a multiple of 10, so $C$ is an integer.
+
+**Generalization:** This logic follows for all $k > 1$ by induction. As long as the tail of length $k$ is stable, a corresponding integer constant $C$ will always exist for higher powers.
 
 ---
 
