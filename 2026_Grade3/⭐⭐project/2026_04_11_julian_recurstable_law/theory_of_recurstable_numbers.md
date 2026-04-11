@@ -7,7 +7,7 @@ Hi! I am a 3rd grade student. While exploring the powers of 5 today, I discovere
 
 ---
 
-##  What did I find?
+## 1. What did I find?
 
 1. For any integer exponent $n \ge 2$, the value of $5^n$ will always end in the digits **25**.
 2. The hundreds digit always flips between $1$ and $6$ .
@@ -18,7 +18,7 @@ $$A_n = 5(A_{n-1}) + 1$$
 
 ---
 
-##  How did I find it? 
+## 2. How did I find it? 
 
 I figured it out! When you multiply the end part (**25**) by **5**, you get **125**. 
 
@@ -32,7 +32,7 @@ That’s why you take the previous leading part, multiply it by 5, and then **al
 
 ---
 
-##  Let's see it in action:
+## 3.Let's see it in action:
 
 | Power ($5^n$) | Result | leading Part ($A_n$) | Calculation ($5 \cdot A_{n-1} + 1$) | **1-6 Pattern** |
 | :--- | :--- |:---------------------| :--- | :--- |
@@ -45,7 +45,7 @@ That’s why you take the previous leading part, multiply it by 5, and then **al
 
 ---
 
-##  The "Quinponent" Verification
+## 4.The "Quinponent" Verification
 * I originally named my first discovery the **"Quinponent"** pattern—a portmanteau of **Quin** (five) and **Ex-ponent**. 
 * I wrote this script specifically to verify the leading digits for powers of 5.
 
@@ -61,7 +61,7 @@ if __name__ == "__main__":
     verify_quinponent(10)
 ```
 
-##  Are there any similar numbers?
+## 5. Are there any similar numbers?
 
 | Order ($k$) | Base ($B$) | Stable Tail ($T$) | Constant ($C$) | Recursive Formula          |
 |:------------|:-----------|:------------------|:---------------|:---------------------------|
@@ -80,7 +80,7 @@ if __name__ == "__main__":
 
 ---
 
-## Recurstable Numbers: The Core Concept
+## 6.Recurstable Numbers: The Core Concept
 
 ### Etymology 
 The term **"Recurstable"** is a portmanteau created by me, combining **Recursion** and **Stable**.
@@ -93,7 +93,7 @@ $$A_n = B(A_{n-1}) + C$$
 
 ---
 
-## Julian's First Law & Julian Constant
+## 7. Julian's First Law & Julian Constant
 
 ### Step 1: Specific Observation (The Case of 5)
 (To describe this for any power, I used the algebraic notation taught by my mother to write the formulas for $n$ and $n-1$):
@@ -138,7 +138,7 @@ $$A_n = B \cdot A_{n-1} + \frac{T \cdot B - T}{10^k}$$
 
 ---
 
-##  Final Conclusion (The Core Discovery)
+## 8. Final Conclusion (The Core Discovery)
 
 ### 1.  **The Julian Constant:**  
 
@@ -153,8 +153,8 @@ This linear pattern only works because the Tail ($T$) is **Stable**. If the tail
 
 ---
 
-## Julian's Second Law (The Law of Recurstability)
-A positive integer $B$ is a **Recurstable Number** if and only if its last digit $T_1 \in \{0, 1, 5, 6\}$. 
+## 9. Julian's Second Law (The Law of Recurstability)
+A positive integer $B$ is a **Recurstable Number** if and only if its last digit ($k$=$1$) $T_1 \in \{0, 1, 5, 6\}$. 
 
 This is a **Necessary and Sufficient Condition**. 
 
@@ -171,21 +171,33 @@ If $B$ ends in $T_1 \in \{0, 1, 5, 6\}$, the Julian Constant $C = \frac{T_1(B-1)
 * **If $T_1=1$:** Since $B$ ends in 1, $(B-1)$ must end in 0. Any number ending in 0 is a multiple of 10, so $C$ is an integer.
 * **If $T_1=5$:** Since $B$ ends in 5, $B$ is an odd number. Therefore, $(B-1)$ must be an even number. $5 \times \text{Even Number}$ always results in a number ending in 0, so $C$ is an integer.
 * **If $T_1=6$:** Since $B$ ends in 6, $(B-1)$ must end in 5. $6 \times 5 = 30$, which is a multiple of 10, so $C$ is an integer.
+* **Conclusion:** Therefore, ending with $\{0, 1, 5, 6\}$ is a **sufficient** condition to guarantee recurstability.
 
-**Generalization:** This logic follows for all $k > 1$ by induction. As long as the tail of length $k$ is stable, a corresponding integer constant $C$ will always exist for higher powers.
+## 10. Practical Application: The "Instant Identifier"
+The true power of Julian's Second Law is its **Predictive Capability**. 
+
+By using this law, we can identify a Recurstable Number **instantly** just by observing the last digit. We no longer need to perform complex power calculations to see if a pattern exists; we know it **must** follow a beautiful leading-digit pattern before we even start the calculation. 
+
+It acts as a **Mathematical Filter**:
+1. **Filter Out:** Immediately discard any number not ending in 0, 1, 5, or 6 (60% of all numbers).
+2. **Predict:** For numbers like **36** or **121**, the law predicts a perfect recursion exists, allowing us to move straight to calculating the Julian Constant $C$.
 
 ---
 
-## 4. Acknowledgments & Research Methodology
+
+
+## 11. Acknowledgments & Research Methodology
 
 This research is a collaborative effort involving original discovery, educational guidance, and technical synthesis:
 
 1. **Original Discovery & Naming Rights:** The core theoretical framework is the independent work of **Julian Wong**. This includes the discovery of the $5^n$ pattern and the $\{0, 1, 5, 6\}$ logic. Julian Wong holds the naming rights to the original terminology used in this document, specifically:
     * **Recurstable Numbers**
     * **Julian’s First Law** (Linear Leading Recursion)
-    * **Julian’s Second Law** (The $\{0, 1, 5, 6\}$ Condition)
     * **The Julian Constant ($C$)**
-    * **The Stability Corollary**
+    * **Julian's First Law Corollary**
+    * **Julian’s Second Law** (The $\{0, 1, 5, 6\}$ Condition)
+   
+ 
 
 2. **Mathematical Guidance:** I would like to express my deepest gratitude to my **Mother**. She introduced me to formal algebraic methods, teaching me how to use variables (like $A_n$) and powers of ten ($10^k$) to transform my intuitive observations into a rigorous logical proof.
 
