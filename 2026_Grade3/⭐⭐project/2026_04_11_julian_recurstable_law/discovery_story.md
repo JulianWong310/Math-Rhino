@@ -32,7 +32,7 @@
 
 ##  English Version
 
-On a Friday afternoon, while playing in my room, Julian suddenly told me he had made a new mathematical discovery. I often hear about such "discoveries" from him—last time, he figured out the **divisibility rule for 8**, even recognizing that the hundreds digit must be analyzed based on its parity.
+On a Friday afternoon, while playing in my room, Julian suddenly told me he had made a new mathematical discovery. I often hear about such "discoveries" from him—last time, he figured out the divisibility rule for 8, even recognizing that the hundreds digit must be analyzed based on its parity.
 
 This time, he told me that powers of 5 always result in a number ending in 25. As I reached for a calculator, he said:
 "Mom, no need for that. It’s obvious. Since $4 \times 25 = 100$, the 'extra' 25 will always stay at the end."
@@ -45,7 +45,7 @@ I didn't understand at first, so he eagerly explained with examples. Once I gras
 
 Thinking this might be a niche branch of number theory worth documenting, I assisted him in beginning a series of proofs and naming.
 
-During this process, he made another discovery: **all numbers ending in 0, 1, 5, or 6 share similar properties. He explained: because these numbers result in themselves when multiplied, their "tails" remain stable across their powers. Based on this, I assisted him in formalizing the proof and naming for this expansion as well.
+During this process, he made another discovery: all numbers ending in 0, 1, 5, or 6 share similar properties. He explained: because these numbers result in themselves when multiplied, their "tails" remain stable across their powers. Based on this, I assisted him in formalizing the proof and naming for this expansion as well.
 
 Given his young age, I listened to his dictation and typed for him, attempting to "translate" his insights into professional academic terminology. Over two days, Julian completed his very first math paper.
 
