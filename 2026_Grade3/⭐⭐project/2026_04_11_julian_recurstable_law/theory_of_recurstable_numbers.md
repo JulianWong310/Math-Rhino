@@ -173,6 +173,8 @@ If $B$ ends in $T_1 \in \{0, 1, 5, 6\}$, the Julian Constant $C = \frac{T_1(B-1)
 * **If $T_1=6$:** Since $B$ ends in 6, $(B-1)$ must end in 5. $6 \times 5 = 30$, which is a multiple of 10, so $C$ is an integer.
 * **Conclusion:** Therefore, ending with $\{0, 1, 5, 6\}$ is a **sufficient** condition to guarantee recurstability.
 
+---
+
 ## 10. Practical Application: The "Instant Identifier"
 The true power of Julian's Second Law is its **Predictive Capability**. 
 
@@ -183,8 +185,6 @@ It acts as a **Mathematical Filter**:
 2. **Predict:** For numbers like **36** or **121**, the law predicts a perfect recursion exists, allowing us to move straight to calculating the Julian Constant $C$.
 
 ---
-
-
 
 ## 11. Acknowledgments & Research Methodology
 
@@ -202,6 +202,7 @@ This research is a collaborative effort involving original discovery, educationa
 2. **Mathematical Guidance:** I would like to express my deepest gratitude to my **Mother**. She introduced me to formal algebraic methods, teaching me how to use variables (like $A_n$) and powers of ten ($10^k$) to transform my intuitive observations into a rigorous logical proof.
 
 3. **Technical Synthesis:** As a 3rd-grade student, I utilized **AI assistance** to translate my original ideas into formal English and to provide the precise academic terminology (such as "Necessary and Sufficient" and "Corollary"). This collaboration helped in articulating my findings to meet international scientific documentation standards.
+   
 ---
 
 *License:* This project is licensed under the MIT License - see the LICENSE file for details.
