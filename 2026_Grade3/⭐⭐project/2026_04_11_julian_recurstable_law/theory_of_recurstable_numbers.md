@@ -200,10 +200,10 @@ Q.E.D.
 This research is a collaborative effort involving original discovery, educational guidance, and technical synthesis:
 
 1. **Original Discovery & Naming Rights:** The core theoretical framework is the independent work of **Julian Wong**. This includes the discovery of the $5^n$ pattern and the $\{0, 1, 5, 6\}$ logic. Julian Wong holds the naming rights to the original terminology used in this document, specifically:
-    * **Recurstable Numbers**
     * **Julian’s First Law** (Linear Leading Recursion)
     * **The Julian Constant ($C$)**
     * **Julian's First Law Corollary**
+    * **Recurstable Numbers**
     * **Julian’s Second Law** (The $\{0, 1, 5, 6\}$ Condition)
    
  
