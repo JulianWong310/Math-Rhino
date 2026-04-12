@@ -8,7 +8,7 @@
 
 ---
 
-Hi! I am a 3rd grade student. While exploring the powers of 5 today, I discovered a super cool secret hidden within the numbers. I am naming this discovery the 'Julian's First Law' and calling these types of integers 'Recurstable Numbers.
+Hi! I am a 3rd grade student. While exploring the powers of 5 today, I discovered a super cool secret hidden within the numbers. I am naming this discovery the 'Julian's First Law' and calling these types of integers 'Recurstable Numbers'.
 
 
 
@@ -27,7 +27,7 @@ $$A_n = 5(A_{n-1}) + 1$$
 
 ## 2. How did I find it? 
 
-When you multiply the end part (**25**) by **5**, you get **125**. Because **$4  \times25$ = $100$**, every time you multiply by 5, it will go over 100. So:
+When you multiply the end part **25** by **5**, you get **125**. Because **$4  \times25$ = $100$**, every time you multiply by 5, it will go over 100. So:
 - The **$25$** stays at the end.
 - The **$1$** always **"carry over"** to the next place (the hundreds place).
 
@@ -69,6 +69,19 @@ if __name__ == "__main__":
 ```
 
 ## 5. Are there any similar numbers?
+I wrote a Python 'detector' to hunt for numbers that keep their same tail when multiplied.
+```python
+def find_similar_numbers(base, k):
+    results = []
+    for i in range(2, base):
+        # Checking if the last k digits remain invariant when squared
+        if (i ** 2) % (10 ** k) == i % (10 ** k):
+            results.append(i)
+    return results
+
+if __name__ == "__main__":
+    print(find_similar_numbers(100, 2))
+```
 
 | Tail Length ($k$) | Base ($B$) | Stable Tail ($T$) | Constant ($C$) | Recursive Formula          |
 |:------------------|:-----------|:------------------|:---------------|:---------------------------|
@@ -117,7 +130,7 @@ $$C = \frac{B \cdot T - T}{10^k}$$
 
 ---
 
-### Step 2: Proving the Pattern for 5
+### Step 2: Proving the Quinponent Pattern 
 To find the relationship between $A_n$ and $A_{n-1}$, I used the fact that $5^n = 5^{n-1} \cdot 5$:
 
 $$A_n \cdot 100 + 25 = (A_{n-1} \cdot 100 + 25) \cdot 5$$
@@ -159,6 +172,37 @@ Divide by $10^k$ to isolate $A_n$:
 
 Q.E.D
 
+---
+
+## Computational Verification
+I developed this Python script to ensure the mathematical integrity of Julian's First Law. 
+
+```python
+def verify_julian_first_law(B, k, n):
+    # Calculate the Stable Tail (T)
+    T = (B ** 2) % (10 ** k)
+    # Calculate the Julian Constant (C)
+    C = (B * T - T) // (10 ** k)
+
+    # Starting Leading Part (A_2)
+    A = (B ** 2) // (10 ** k)
+
+    for n in range(3, n + 1):
+        # Applying Julian's First Law: A_n = B * A_{n-1} + C
+        predict_A = B * A + C
+
+        # Calculating actual value for validation
+        actual_A = (B ** n) // (10 ** k)
+
+        # Iterating: The current prediction becomes the base for the next power
+        A = predict_A
+
+        # Verify if the Law holds true
+        print(predict_A == actual_A)
+
+if __name__ == "__main__":
+    verify_julian_first_law(B=5, k=2, n=10)
+```
 ---
 
 ### **Julian's First Law Corollary:** 
@@ -225,6 +269,7 @@ In my next paper, I plan to establish a **"Generalized Julian Theory"** to expla
 1. **Original Discovery & Intellectual Property Right:** The core theoretical framework and mathematical insights presented in this study are the independent discoveries of Julian Wong. This encompasses the original derivation of the $5^n$ recursive pattern and its subsequent generalization into the $\{0, 1, 5, 6\}$ terminal stability logic. As the primary investigator, Julian Wong asserts full naming rights to the following established terminology:
 
     * **Julian’s First Law of Recurstable Numbers** (Linear Leading Recursion)
+    *  **The "Quinponent" Pattern (The original discovery of powers of 5)**
     * **The Julian Constant ($C$)**
     * **Julian's First Law Corollary**
     * **Recurstable Numbers**
