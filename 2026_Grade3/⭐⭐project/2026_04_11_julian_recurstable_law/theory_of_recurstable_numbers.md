@@ -166,7 +166,7 @@ According to *The Julian Constant*, this linear pattern only works because the T
 
 ---
 
-## 7. Recurstable Numbers
+## 7. Recurstable Numbers & The Julian Class
 
 ### Etymology 
 The term **"Recurstable"** is an original portmanteau created by Julian Wong, synergizing **Recurrence** (the deterministic evolution of terms) and **Stable** (the invariance of terminal digits).
@@ -211,7 +211,16 @@ Q.E.D.
 
 ---
 
-## 9. Acknowledgments & Research Methodology
+## 9. Future Work: Towards a Generalized Theory
+
+This study marks the beginning of our exploration into stable-tail sequences.
+
+**Initial observations suggest that the summation of Recurstable power sequences, $S_n = B_1^n + B_2^n$, also exhibits higher-order linear recurrence relations.**
+In my next paper, I plan to establish a **"Generalized Julian Theory"** to explain how these numbers interact. 
+
+---
+
+## 10. Acknowledgments & Research Methodology
 
 1. **Original Discovery & Intellectual Property Right:** The core theoretical framework and mathematical insights presented in this study are the independent discoveries of Julian Wong. This encompasses the original derivation of the $5^n$ recursive pattern and its subsequent generalization into the $\{0, 1, 5, 6\}$ terminal stability logic. As the primary investigator, Julian Wong asserts full naming rights to the following established terminology:
 
