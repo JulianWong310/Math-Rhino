@@ -143,7 +143,7 @@ $$10^k \cdot A_n + T = 10^k \cdot B \cdot A_{n-1} + T \cdot B$$
 $$10^k \cdot A_n = 10^k \cdot B \cdot A_{n-1} + (T \cdot B - T)$$
 
 Divide by $10^k$ to isolate $A_n$:
-$$A_n = B \cdot A_{n-1} + \frac{T \cdot B - T}{10^k}$$
+>$$A_n = B \cdot A_{n-1} + \frac{T \cdot B - T}{10^k}$$
 
 ---
 
@@ -184,6 +184,9 @@ This structure encompasses all forms of deterministic digital structure emerging
 * **Global Relations:** Where the entire leading part follows a unified mathematical model, such as the **Linear Recurrence Relation** ($A_n = B \cdot A_{n-1} + C$) defined as the **Julian Class**.
 * **Local Relations:** Where specific digits or subsets of digits follow their own independent patterns, such as the periodic $\{1, 6\}$ **hundreds-digit pattern** observed in the powers of $5$.
 
+### Classification: The Julian Class
+Within the family of Recurstable Numbers, those that follow a unified mathematical model are categorized as the **Julian Class**.
+
 ---
 
 ## 8.Julian’s Second Law of Recurstable Numbers
@@ -208,15 +211,16 @@ Q.E.D.
 
 ---
 
-## 10. Acknowledgments & Research Methodology
+## 9. Acknowledgments & Research Methodology
 
-1. **Original Discovery & Intellectual Property Right:** The core theoretical framework and mathematical insights presented in this study are the independent discoveries of Julian Wong. This encompasses the original derivation of the $5^n$ recursive pattern and its subsequent generalization into the $\{0, 1, 5, 6\}$ terminal stability logic.As the primary investigator, Julian Wong asserts full naming rights to the following established terminology:
+1. **Original Discovery & Intellectual Property Right:** The core theoretical framework and mathematical insights presented in this study are the independent discoveries of Julian Wong. This encompasses the original derivation of the $5^n$ recursive pattern and its subsequent generalization into the $\{0, 1, 5, 6\}$ terminal stability logic. As the primary investigator, Julian Wong asserts full naming rights to the following established terminology:
 
     * **Julian’s First Law of Recurstable Numbers** (Linear Leading Recursion)
     * **The Julian Constant ($C$)**
     * **Julian's First Law Corollary**
     * **Recurstable Numbers**
-    * **Julian’s Second Law of Recurstable Numbers** (The $\{0, 1, 5, 6\}$ Condition)
+    * **The Julian Class**
+   * **Julian’s Second Law of Recurstable Numbers** (The $\{0, 1, 5, 6\}$ Condition)
    
  
 
