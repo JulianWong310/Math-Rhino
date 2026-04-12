@@ -173,7 +173,7 @@ A **Recurstable Number** is a positive integer $B$ such that for its power seque
 
 2. **Logical Leading (The Head):** The leading part $A_n$ (whether analyzed as a comprehensive numerical block or through individual digital positions) exhibits a **deterministic logical structure**. 
 
-This structure encompasses all forms of mathematical order emerging from the stability of the tail, including but not limited to:
+This structure encompasses all forms of deterministic digital structure emerging from the stability of the tail, including but not limited to:
 * **Global Relations:** Where the entire leading part follows a unified mathematical model, such as the **Linear Recurrence Relation** ($A_n = B \cdot A_{n-1} + C$) defined as the **Julian Class**.
 * **Local Relations:** Where specific digits or subsets of digits follow their own independent patterns, such as the periodic $\{1, 6\}$ **hundreds-digit pattern** observed in the powers of $5$.
 
