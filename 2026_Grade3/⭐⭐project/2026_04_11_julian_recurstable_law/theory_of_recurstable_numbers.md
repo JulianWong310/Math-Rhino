@@ -20,19 +20,19 @@ $$A_n = 5(A_{n-1}) + 1$$
 
 ## 2. How did I find it? 
 
-I figured it out! When you multiply the end part (**25**) by **5**, you get **125**. 
-
-Because **$4  \times25$ = $100$**, every time you multiply by 5, it will go over 100. So:
+When you multiply the end part (**25**) by **5**, you get **125**. Because **$4  \times25$ = $100$**, every time you multiply by 5, it will go over 100. So:
 - The **$25$** stays at the end.
 - The **$1$** always **"carry over"** to the next place (the hundreds place).
 
-That’s why you take the previous leading part, multiply it by 5, and then **always add 1**! This also explains the **1-6 Flip-Flop**:
+That’s why you take the previous leading part, multiply it by 5, and then **always add 1**! 
+
+This also explains the **1-6 Flip-Flop**:
 - If the front ends in **1**: $1 \times 5 + 1 = \mathbf{6}$
 - If the front ends in **6**: $6 \times 5 + 1 = 3\mathbf{1}$ (it goes back to 1!)
 
 ---
 
-## 3.Let's see it in action:
+## 3. Let's see it in action:
 
 | Power ($5^n$) | Result | leading Part ($A_n$) | Calculation ($5 \cdot A_{n-1} + 1$) | **1-6 Pattern** |
 | :--- | :--- |:---------------------| :--- | :--- |
@@ -80,31 +80,31 @@ if __name__ == "__main__":
 
 ---
 
-## 6.Recurstable Numbers: The Core Concept
+## 6. Julian's First Law 
+**Theorem Statement**
+For any base $B$ where the power $B^n$ results in a **Stable Tail ($T$)** of length $k$, the **Leading Part ($A_n$)** of the sequence can always be expressed as a linear recurrence:
 
-### Etymology 
-The term **"Recurstable"** is a portmanteau created by me, combining **Recursion** and **Stable**.
+$$A_n = B \cdot A_{n-1} + C$$
 
-### Definition
-A Recurstable Number is a positive integer $B$ such that for its powers $B^n$, where $n \geq 2$, the following two conditions are satisfied:
-1. **Terminal Stability (The Tail):** The last $k$ digits ($T$) remain constant.
-2. **Leading-Digit Recursion (The Head):** The leading digits $A_n$ follow a linear recurrence:
-$$A_n = B(A_{n-1}) + C$$
+**Variable Definitions**
+* **$A_n$**: The "Leading Part" of the number, calculated as the integer value remaining after removing the last $k$ digits (the stable tail).
+* **$B$**: The base of the power being calculated.
+* **$n$**: The exponent ($n \ge 2$).
+* **$C$ (The Julian Constant)**: A fixed integer derived from the interaction between the base and the stable tail. 
 
----
+**The Julian Constant Formula**
+Julian's logic dictates that the constant $C$ is determined by the "carry-over" from the tail's multiplication:
+$$C = \frac{B \cdot T - T}{10^k}$$
 
-## 7. Julian's First Law & Julian Constant
+## Mathematical Proof
 
 ### Step 1: Specific Observation (The Case of 5)
-(To describe this for any power, I used the algebraic notation taught by my mother to write the formulas for $n$ and $n-1$):
-I started by looking at the powers of 5 and splitting them into a "Head" ($A_n$) and a "Tail" ($25$):
 
 1. $5^2 = A_2 \cdot 100 + 25$
 2. $5^3 = A_3 \cdot 100 + 25$
 3. $\vdots$
 4. $5^{n-1} = A_{n-1} \cdot 100 + 25$
 5. $5^n = A_n \cdot 100 + 25$
-
 
 ---
 
@@ -138,7 +138,7 @@ $$A_n = B \cdot A_{n-1} + \frac{T \cdot B - T}{10^k}$$
 
 ---
 
-## 8. Final Conclusion (The Core Discovery)
+### Step 4: Final Conclusion (The Core Discovery)
 
 ### 1.  **The Julian Constant:**  
 
@@ -148,40 +148,52 @@ $$A_n = B \cdot A_{n-1} + \frac{T \cdot B - T}{10^k}$$
 
    $$A_n = B \cdot A_{n-1} + C$$
 
-### 3. **Julian's First Law Corollary:** 
-This linear pattern only works because the Tail ($T$) is **Stable**. If the tail were not stable, the constant $C$ would break, and the pattern would disappear!
+Q.E.D
 
 ---
 
-## 9. Julian's Second Law (The Law of Recurstability)
+### **Julian's First Law Corollary:** 
+According to *The Julian Constant*, this linear pattern only works because the Tail ($T$) is **Stable**. If the tail were not stable, the constant $C$ would break, and the pattern would disappear!
+
+---
+
+## 7. Recurstable Numbers
+
+### Etymology 
+The term **"Recurstable"** is a portmanteau created by me, combining **Recursion** and **Stable**.
+
+### Definition
+A Recurstable Number is a positive integer $B$ such that for its powers $B^n$, where $n \geq 2$, the following two conditions are satisfied:
+1. **Terminal Stability (The Tail):** The last $k$ digits ($T$) remain constant.
+2. **Leading-Digit Recursion (The Head):** The leading digits $A_n$ follow a linear recurrence:
+$$A_n = B(A_{n-1}) + C$$
+
+---
+
+## 8. Julian's Second Law 
+**Theorem Statement**
 A positive integer $B$ is a **Recurstable Number** if and only if its last digit $T_1 \in \{0, 1, 5, 6\}$. 
 
-### Proof
+###  Mathematical Proof
+
 To find a Recurstable Number, we only need to pass its two conditions:
 
 1. **Stable Tail:** Only $\{0, 1, 5, 6\}$ have a "fixed tail" when multiplied by themselves. All other digits are rejected immediately because they are unstable.
 
-2. **Recursion Leading:** According to *Julian's First Law*, The Julian Constant $C = \frac{T_1(B-1)}{10}$ must be a whole number. 
+2. **Recursion Leading:** According to *Julian's First*, The Julian Constant $C = \frac{T_1(B-1)}{10}$ must be a whole number. 
    * For **0 and 1**, the product $T_1(B-1)$ clearly ends in 0.
    * For **5**, $(B-1)$ is even, so $5 \times \text{even} = \dots0$.
    * For **6**, $(B-1)$ ends in 5, so $6 \times 5 = 30$.
 
-**Conclusion:** Since $\{0, 1, 5, 6\}$ pass both tests, any number ending in 0, 1, 5, or 6 is guaranteed to be Recurstable.
+**Conclusion:** Since $\{0, 1, 5, 6\}$ are the only digits that pass both the Stability and Integrality tests, any number ending in these digits is guaranteed to be Recurstable; conversely, all Recurstable numbers must end in 0, 1, 5, or 6. 
+
+Q.E.D.
 
 ---
 
-## 10. Practical Application: The "Instant Identifier"
-The true power of Julian's Second Law is its **Predictive Capability**. 
 
-By using this law, we can identify a Recurstable Number **instantly** just by observing the last digit. We no longer need to perform complex power calculations to see if a pattern exists; we know it **must** follow a beautiful leading-digit pattern before we even start the calculation. 
 
-It acts as a **Mathematical Filter**:
-1. **Filter Out:** Immediately discard any number not ending in 0, 1, 5, or 6 (60% of all numbers).
-2. **Predict:** For numbers like **36** or **121**, the law predicts a perfect recursion exists, allowing us to move straight to calculating the Julian Constant $C$.
-
----
-
-## 11. Acknowledgments & Research Methodology
+## 10. Acknowledgments & Research Methodology
 
 This research is a collaborative effort involving original discovery, educational guidance, and technical synthesis:
 
@@ -197,7 +209,6 @@ This research is a collaborative effort involving original discovery, educationa
 2. **Mathematical Guidance:** I would like to express my deepest gratitude to my **Mother**. She introduced me to formal algebraic methods, teaching me how to use variables (like $A_n$) and powers of ten ($10^k$) to transform my intuitive observations into a rigorous logical proof.
 
 3. **Technical Synthesis:** As a 3rd-grade student, I utilized **AI assistance** to translate my original ideas into formal English and to provide the precise academic terminology (such as "Necessary and Sufficient" and "Corollary"). This collaboration helped in articulating my findings to meet international scientific documentation standards.
-   
 ---
 
 *License:* This project is licensed under the MIT License - see the LICENSE file for details.
