@@ -63,7 +63,7 @@ if __name__ == "__main__":
 
 ## 5. Are there any similar numbers?
 
-| Order ($k$) | Base ($B$) | Stable Tail ($T$) | Constant ($C$) | Recursive Formula          |
+| Tail length ($k$) | Base ($B$) | Stable Tail ($T$) | Constant ($C$) | Recursive Formula          |
 |:------------|:-----------|:------------------|:---------------|:---------------------------|
 | **1**       | 6          | 6                 | **3**          | $A_n = 6(A_{n-1}) + 3$     |
 | **1**       | 36         | 6                 | **21**         | $A_n = 36(A_{n-1}) + 21$   |
