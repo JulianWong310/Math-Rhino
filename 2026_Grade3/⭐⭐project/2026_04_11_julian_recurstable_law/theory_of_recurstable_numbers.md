@@ -34,13 +34,13 @@ This also explains the **1-6 Flip-Flop**:
 
 ## 3. Let's see it in action:
 
-| Power ($5^n$) | Result | leading Part ($A_n$) | Calculation ($5 \cdot A_{n-1} + 1$) | **1-6 Pattern** |
-| :--- | :--- |:---------------------| :--- | :--- |
-| $5^2$ | 25 | 0                    | (Base Case) | - |
-| $5^3$ | 125 | **1**                | $5(0) + 1 = 1$ | **1** |
-| $5^4$ | 625 | **6**                | $5(1) + 1 = 6$ | **6** |
-| $5^5$ | 3125 | 3**1**               | $5(6) + 1 = 31$ | **1** |
-| $5^6$ | 15625 | 15**6**              | $5(31) + 1 = 156$ | **6** |
+| Power ($5^n$) | Result | leading Part ($A_n$) | Calculation ($5 \cdot A_{n-1} + 1$) | **Hundreds-Digit Pattern** |
+| :--- | :--- |:---------------------| :--- |:---------------------------|
+| $5^2$ | 25 | 0                    | (Base Case) | -                          |
+| $5^3$ | 125 | **1**                | $5(0) + 1 = 1$ | **1**                      |
+| $5^4$ | 625 | **6**                | $5(1) + 1 = 6$ | **6**                      |
+| $5^5$ | 3125 | 3**1**               | $5(6) + 1 = 31$ | **1**                      |
+| $5^6$ | 15625 | 15**6**              | $5(31) + 1 = 156$ | **6**                      |
 
 
 ---
@@ -63,19 +63,19 @@ if __name__ == "__main__":
 
 ## 5. Are there any similar numbers?
 
-| Order ($k$) | Base ($B$) | Stable Tail ($T$) | Constant ($C$) | Recursive Formula          |
-|:------------|:-----------|:------------------|:---------------|:---------------------------|
-| **1**       | 6          | 6                 | **3**          | $A_n = 6(A_{n-1}) + 3$     |
-| **1**       | 36         | 6                 | **21**         | $A_n = 36(A_{n-1}) + 21$   |
-| **1**       | 11         | 1                 | **1**          | $A_n = 11(A_{n-1}) + 1$    |
-| **2**       | **5**      | **25**            | **1**          | $A_n = 5(A_{n-1}) + 1$     |
-| **2**       | 25         | 25                | **6**          | $A_n = 25(A_{n-1}) + 6$    |
-| **2**       | 26         | 76                | **19**         | $A_n = 26(A_{n-1}) + 19$   |
-| **2**       | 45         | 25                | **11**         | $A_n = 45(A_{n-1}) + 11$   |
-| **2**       | 76         | 76                | **57**         | $A_n = 76(A_{n-1}) + 57$   |
-| **3**       | 25         | 625               | **15**         | $A_n = 25(A_{n-1}) + 15$   |
-| **3**       | 376        | 376               | **141**        | $A_n = 376(A_{n-1}) + 141$ |
-| **3**       | 425        | 625               | **265**        | $A_n = 425(A_{n-1}) + 265$ |
+| Tail Length ($k$) | Base ($B$) | Stable Tail ($T$) | Constant ($C$) | Recursive Formula          |
+|:------------------|:-----------|:------------------|:---------------|:---------------------------|
+| **1**             | 6          | 6                 | **3**          | $A_n = 6(A_{n-1}) + 3$     |
+| **1**             | 36         | 6                 | **21**         | $A_n = 36(A_{n-1}) + 21$   |
+| **1**             | 11         | 1                 | **1**          | $A_n = 11(A_{n-1}) + 1$    |
+| **2**             | **5**      | **25**            | **1**          | $A_n = 5(A_{n-1}) + 1$     |
+| **2**             | 25         | 25                | **6**          | $A_n = 25(A_{n-1}) + 6$    |
+| **2**             | 26         | 76                | **19**         | $A_n = 26(A_{n-1}) + 19$   |
+| **2**             | 45         | 25                | **11**         | $A_n = 45(A_{n-1}) + 11$   |
+| **2**             | 76         | 76                | **57**         | $A_n = 76(A_{n-1}) + 57$   |
+| **3**             | 25         | 625               | **15**         | $A_n = 25(A_{n-1}) + 15$   |
+| **3**             | 376        | 376               | **141**        | $A_n = 376(A_{n-1}) + 141$ |
+| **3**             | 425        | 625               | **265**        | $A_n = 425(A_{n-1}) + 265$ |
 
 
 ---
@@ -162,13 +162,20 @@ According to *The Julian Constant*, this linear pattern only works because the T
 ## 7. Recurstable Numbers
 
 ### Etymology 
-The term **"Recurstable"** is a portmanteau created by me, combining **Recursion** and **Stable**.
+The term **"Recurstable"** is an original portmanteau created by Julian Wong, synergizing **Recurrence** (the deterministic evolution of terms) and **Stable** (the invariance of terminal digits).
 
 ### Definition
-A Recurstable Number is a positive integer $B$ such that for its powers $B^n$, where $n \geq 2$, the following two conditions are satisfied:
-1. **Terminal Stability (The Tail):** The last $k$ digits ($T$) remain constant.
-2. **Leading-Digit Recursion (The Head):** The leading digits $A_n$ follow a linear recurrence:
-$$A_n = B(A_{n-1}) + C$$
+> *"A Recurstable Number is defined by the duality of its structure: the absolute stillness of its Tail and the rhythmic logic of its Head."*
+
+A **Recurstable Number** is a positive integer $B$ such that for its power sequence $B^n$ (where $n \geq 2$), the following two conditions are satisfied:
+
+1. **Terminal Stability (The Tail):** The sequence maintains an invariant suffix of $k$ digits ($T$). This constant "Tail" forms the static mathematical foundation upon which all subsequent logic is built.
+
+2. **Logical Leading (The Head):** The leading part $A_n$ (whether analyzed as a comprehensive numerical block or through individual digital positions) exhibits a **deterministic logical structure**. 
+
+This structure encompasses all forms of mathematical order emerging from the stability of the tail, including but not limited to:
+* **Global Relations:** Where the entire leading part follows a unified mathematical model, such as the **Linear Recurrence Relation** ($A_n = B \cdot A_{n-1} + C$) defined as the **Julian Class**.
+* **Local Relations:** Where specific digits or subsets of digits follow their own independent patterns, such as the periodic $\{1, 6\}$ **hundreds-digit pattern** observed in the powers of $5$.
 
 ---
 
@@ -180,37 +187,35 @@ A positive integer $B$ is a **Recurstable Number** if and only if its last digit
 
 To find a Recurstable Number, we only need to pass its two conditions:
 
-1. **Stable Tail:** Only $\{0, 1, 5, 6\}$ have a "fixed tail" when multiplied by themselves. All other digits are rejected immediately because they are unstable.
+1. **Terminal Stability:** Only $\{0, 1, 5, 6\}$ have a "fixed tail" when multiplied by themselves. All other digits are rejected immediately because they are unstable.
 
-2. **Recursion Leading:** According to *Julian's First*, The Julian Constant $C = \frac{T_1(B-1)}{10}$ must be a whole number. 
+2. **Logical Leading:** The leading part $A_n$ must exhibit either Global or Local logic.
+For Global Logic: As proven in Julian's First Law, the Julian Constant $C = \frac{T_1(B-1)}{10}$ must be an integer.
    * For **0 and 1**, the product $T_1(B-1)$ clearly ends in 0.
    * For **5**, $(B-1)$ is even, so $5 \times \text{even} = \dots0$.
    * For **6**, $(B-1)$ ends in 5, so $6 \times 5 = 30$.
 
-**Conclusion:** Since $\{0, 1, 5, 6\}$ are the only digits that pass both the Stability and Integrality tests, any number ending in these digits is guaranteed to be Recurstable; conversely, all Recurstable numbers must end in 0, 1, 5, or 6. 
+**Conclusion:** Since $\{0, 1, 5, 6\}$ are the only digits that pass both tests, any number ending in these digits is guaranteed to be Recurstable; conversely, all Recurstable numbers must end in 0, 1, 5, or 6. 
 
 Q.E.D.
 
 ---
 
-
-
 ## 10. Acknowledgments & Research Methodology
 
-This research is a collaborative effort involving original discovery, educational guidance, and technical synthesis:
+1. **Original Discovery & Intellectual Property Right:** The core theoretical framework and mathematical insights presented in this study are the independent discoveries of Julian Wong. This encompasses the original derivation of the $5^n$ recursive pattern and its subsequent generalization into the $\{0, 1, 5, 6\}$ terminal stability logic.As the primary investigator, Julian Wong asserts full naming rights to the following established terminology:
 
-1. **Original Discovery & Naming Rights:** The core theoretical framework is the independent work of **Julian Wong**. This includes the discovery of the $5^n$ pattern and the $\{0, 1, 5, 6\}$ logic. Julian Wong holds the naming rights to the original terminology used in this document, specifically:
-    * **Recurstable Numbers**
     * **Julian’s First Law** (Linear Leading Recursion)
     * **The Julian Constant ($C$)**
     * **Julian's First Law Corollary**
+    * **Recurstable Numbers**
     * **Julian’s Second Law** (The $\{0, 1, 5, 6\}$ Condition)
    
  
 
-2. **Mathematical Guidance:** I would like to express my deepest gratitude to my **Mother**. She introduced me to formal algebraic methods, teaching me how to use variables (like $A_n$) and powers of ten ($10^k$) to transform my intuitive observations into a rigorous logical proof.
+2. **Mathematical Guidance:** I would like to express my deepest gratitude to my mother, **Dong Cang**. She introduced me to formal algebraic methods, guiding me to use variables (such as $A_n$) and powers of ten ($10^k$) to transform my intuitive observations into a rigorous logical framework.
 
-3. **Technical Synthesis:** As a 3rd-grade student, I utilized **AI assistance** to translate my original ideas into formal English and to provide the precise academic terminology (such as "Necessary and Sufficient" and "Corollary"). This collaboration helped in articulating my findings to meet international scientific documentation standards.
+3. **Technical Synthesis:** As a 3rd-grade student, I adopted a collaborative approach to formalize my findings. My mother, Dong Cang, acted as my primary scribe, documenting my spoken logic and derivations. To ensure the final manuscript met international scientific standards, I utilized AI assistance to refine the academic terminology (e.g., Corollary, Terminal Stability). While the formal presentation was a collaborative effort, the mathematical discoveries and logical proofs remain my original work.
 ---
 
-*License:* This project is licensed under the MIT License - see the LICENSE file for details.
+**License:** This project is licensed under the MIT License - see the LICENSE file for details.

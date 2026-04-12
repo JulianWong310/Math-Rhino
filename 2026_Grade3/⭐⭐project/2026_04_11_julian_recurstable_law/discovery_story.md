@@ -1,5 +1,6 @@
 # 母亲的记录 | A Mother's Record
-
+**记录人 (Author): 仓东 (Dong Cang)**
+**日期 (Date): 2026年4月11日**
 ---
 
 ## 中文版 (Chinese Version)
@@ -8,8 +9,8 @@
 
 这次他告诉我，5 的幂（次方）总会得到以 25 结尾的数字。我正准备拿计算器验证，他却说： “妈妈，不用拿计算器。因为 $4 \times 25 = 100$，所以多出来的 25 总会留在末尾。”
 
-我像往常一样夸赞他，但他接下来的话让我吃惊。他说，因为要进1，如果把 5 的幂去掉尾部的 25，剩余部分的关系是：
-上一个数字乘以 5 再加 1，等于下一个数字。
+他说，因为要进 1，如果把 5 的幂去掉尾部的 25，剩余部分的关系是：
+“上一个数字乘以 5 再加 1，等于下一个数字。” 而且他发现，如果观察这部分序列的末位（即原数的百位），数字总是在 1 和 6 之间不停地重复。
 
 起初我并没听懂，他急切地举例解释。当我理解其中的代数逻辑后，我意识到这是一个了不起的发现。他兴奋地问我能不能用他的名字命名。
 
@@ -31,8 +32,8 @@ On a Friday afternoon, while playing in my room, Julian suddenly told me he had 
 This time, he told me that powers of 5 always result in a number ending in 25. As I reached for a calculator, he said:
 "Mom, no need for that. It’s obvious. Since $4 \times 25 = 100$, the 'extra' 25 will always stay at the end."
 
-I praised him as usual, but his next remark caught me off guard. He said that because it carries over a 1 to the next place, if you remove the "25" tail from the powers of 5, the relationship between the remaining parts is:
-The previous number times 5, plus 1, equals the next number.
+I praised him as usual, but his next remark caught me off guard. He explained that because of the carry-over, if you remove the "25" tail from the powers of 5, the relationship between the remaining parts follows a specific rule:
+"The previous number times 5, plus 1, equals the next number." Furthermore, he observed that the last digit of this leading sequence—the hundreds digit of the original power—oscillates indefinitely between 1 and 6.
 
 I didn't understand at first, so he eagerly explained with examples. Once I grasped the algebraic logic, I realized this was a remarkable discovery. He excitedly asked if he could name it after himself.
 
