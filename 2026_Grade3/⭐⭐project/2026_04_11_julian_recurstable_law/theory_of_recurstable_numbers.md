@@ -1,5 +1,12 @@
 # Julian's First Law and the World of Recurstable Numbers
-**By: Julian Wong (Grade 3)** 
+### *A Study on the Linear Leading-Digit Recurrence in Powers of Stable-Tail Integers*
+
+**Author:** Julian Wong  
+**Date:** April 11, 2026  
+**Primary Documenter:** Dong Cang  
+**Keywords:** Number Theory, Power Sequences, Linear Recurrence, Stable-Tail Integers, Recurstable Numbers
+
+---
 
 Hi! I am a 3rd grade student. While exploring the powers of 5 today, I discovered a super cool secret hidden within the numbers. I am naming this discovery the 'Julian's First Law' and calling these types of integers 'Recurstable Numbers.
 
@@ -80,7 +87,7 @@ if __name__ == "__main__":
 
 ---
 
-## 6. Julian's First Law 
+## 6. Julian's First Law of Recurstable Numbers
 **Theorem Statement:**
 For any base $B$ where the power $B^n$ results in a **Stable Tail ($T$)** of length $k$, the **Leading Part ($A_n$)** of the sequence can always be expressed as a linear recurrence:
 
@@ -179,7 +186,7 @@ This structure encompasses all forms of deterministic digital structure emerging
 
 ---
 
-## 8. Julian's Second Law 
+## 8.Julian’s Second Law of Recurstable Numbers
 **Theorem Statement:**
 A positive integer $B$ is a **Recurstable Number** if and only if its last digit $T_1 \in \{0, 1, 5, 6\}$. 
 
@@ -205,15 +212,16 @@ Q.E.D.
 
 1. **Original Discovery & Intellectual Property Right:** The core theoretical framework and mathematical insights presented in this study are the independent discoveries of Julian Wong. This encompasses the original derivation of the $5^n$ recursive pattern and its subsequent generalization into the $\{0, 1, 5, 6\}$ terminal stability logic.As the primary investigator, Julian Wong asserts full naming rights to the following established terminology:
 
-    * **Julian’s First Law** (Linear Leading Recursion)
+    * **Julian’s First Law of Recurstable Numbers** (Linear Leading Recursion)
     * **The Julian Constant ($C$)**
     * **Julian's First Law Corollary**
     * **Recurstable Numbers**
-    * **Julian’s Second Law** (The $\{0, 1, 5, 6\}$ Condition)
+    * **Julian’s Second Law of Recurstable Numbers** (The $\{0, 1, 5, 6\}$ Condition)
    
  
 
 2. **Mathematical Guidance:** I would like to express my deepest gratitude to my mother, **Dong Cang**. She introduced me to formal algebraic methods, guiding me to use variables (such as $A_n$) and powers of ten ($10^k$) to transform my intuitive observations into a rigorous logical framework.
+
 
 3. **Technical Synthesis:** As a 3rd-grade student, I adopted a collaborative approach to formalize my findings. My mother, Dong Cang, acted as my primary scribe, documenting my spoken logic and derivations. To ensure the final manuscript met international scientific standards, I utilized AI assistance to refine the academic terminology (e.g., Corollary, Terminal Stability). While the formal presentation was a collaborative effort, the mathematical discoveries and logical proofs remain my original work.
 ---
