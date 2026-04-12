@@ -81,7 +81,7 @@ if __name__ == "__main__":
 ---
 
 ## 6. Julian's First Law 
-**Theorem Statement**
+**Theorem Statement:**
 For any base $B$ where the power $B^n$ results in a **Stable Tail ($T$)** of length $k$, the **Leading Part ($A_n$)** of the sequence can always be expressed as a linear recurrence:
 
 $$A_n = B \cdot A_{n-1} + C$$
@@ -90,9 +90,11 @@ $$A_n = B \cdot A_{n-1} + C$$
 * **$A_n$**: The "Leading Part" of the number, calculated as the integer value remaining after removing the last $k$ digits (the stable tail).
 * **$B$**: The base of the power being calculated.
 * **$n$**: The exponent ($n \ge 2$).
+* **$T$ :** The recurring ending value of $B^n$.
+* **$k$ :** The number of digits in $T$.
 * **$C$ (The Julian Constant)**: A fixed integer derived from the interaction between the base and the stable tail. 
 
-**The Julian Constant Formula**
+**The Julian Constant Formula:**
 Julian's logic dictates that the constant $C$ is determined by the "carry-over" from the tail's multiplication:
 $$C = \frac{B \cdot T - T}{10^k}$$
 
@@ -102,7 +104,7 @@ $$C = \frac{B \cdot T - T}{10^k}$$
 
 1. $5^2 = A_2 \cdot 100 + 25$
 2. $5^3 = A_3 \cdot 100 + 25$
-3. $\vdots$
+3. $\vdots$ (pattern continues...)
 4. $5^{n-1} = A_{n-1} \cdot 100 + 25$
 5. $5^n = A_n \cdot 100 + 25$
 
@@ -171,7 +173,7 @@ $$A_n = B(A_{n-1}) + C$$
 ---
 
 ## 8. Julian's Second Law 
-**Theorem Statement**
+**Theorem Statement:**
 A positive integer $B$ is a **Recurstable Number** if and only if its last digit $T_1 \in \{0, 1, 5, 6\}$. 
 
 ###  Mathematical Proof
