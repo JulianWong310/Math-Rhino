@@ -252,7 +252,7 @@ A **Recurstable Number** is a positive integer $B$ such that its power sequence 
 
 ---
 
-## 8. Julian’s Second Law of Recurstable Numbers
+## 9. Julian’s Second Law of Recurstable Numbers
 
 **Theorem Statement:** A positive integer $B$ is a Recurstable Number **if and only if** its terminal digit $B \pmod{10} \in \{0, 1, 5, 6\}$. 
 
@@ -265,12 +265,12 @@ A **Recurstable Number** is a positive integer $B$ such that its power sequence 
 
 ---
 
-## 9. Future Work: Toward Cang Dynamics
+## 10. Future Work: Toward Cang Dynamics
 
 ### The "Cang Dynamics" Framework
 This research introduces **Cang Dynamics (仓氏动力学)**, a new field of numerical inquiry dedicated to understanding the deterministic influence of terminal digit stability on the evolution of leading numerical sequences. 
 
-Named in honor of the author's mother (surname **Cang, 仓**), this framework shifts the focus from the magnitude of a number to its internal "momentum"—specifically, how the "extra interference" of carry-over functions as the primary driver for macro-patterns in the "Head."
+Named after the surname **Cang (仓)**, this framework shifts the focus from the magnitude of a number to its internal "momentum"—specifically, how the "extra interference" of carry-over functions as the primary driver for macro-patterns in the "Head."
 
 ### Expansion into Complex Sequences
 The discovery of **Recurstable Numbers** is merely the first milestone in Cang Dynamics. Future research will explore:
@@ -284,19 +284,18 @@ The goal of **Cang Dynamics** is to map the invisible bridge between the microsc
 
 ---
 
-## 10. Acknowledgments & Research Methodology
+## 11. Acknowledgments & Research Methodology
 
-1. **Original Discovery & Intellectual Property Right:** The core theoretical framework and mathematical insights presented in this study are the independent discoveries of Julian Wong. This encompasses the original derivation of the $5^n$ recursive pattern and its subsequent generalization into the $\{0, 1, 5, 6\}$ terminal stability logic. As the primary investigator, Julian Wong asserts full naming rights to the following established terminology:
+1. **Intellectual Property & Naming Rights Assertion:**
+The core theoretical framework and mathematical insights presented in this study are the independent discoveries of **Julian Wong**. As the primary investigator, Julian Wong asserts full naming rights and intellectual priority over the following established terminology:
 
-    * **Julian’s First Law of Recurstable Numbers** (Linear Leading Recursion)
-    *  **The "Quinponent" Pattern (The original discovery of powers of 5)**
-    * **The Julian Constant ($C$)**
-    * **Julian's First Law Corollary**
-    * **Recurstable Numbers**
-    * **The Julian Class**
-   * **Julian’s Second Law of Recurstable Numbers** (The $\{0, 1, 5, 6\}$ Condition)
-   
- 
+      * **Recurstable Numbers:** The overarching classification for integers with stable-tail power sequences.
+      * **Julian’s First Law:** The linear recurrence relation $A_n = B \cdot A_{n-1} + C$.
+      * **The Julian Constant ($C$):** The deterministic integer representing carry-over dynamics.
+      * **The "Quinponent" Pattern:** The foundational discovery specific to powers of 5.
+      * **Julian’s Second Law:** The $\{0, 1, 5, 6\}$ existence criterion for Recurstable Numbers.
+      * **Cang Dynamics (仓氏动力学):** The prospective field investigating terminal stability as a driver for leading-digit momentum (named in honor of the author's mother, surname **Cang**).
+
 
 2. **Mathematical Guidance:** I would like to express my deepest gratitude to my mother, **Dong Cang**. She introduced me to formal algebraic methods, guiding me to use variables (such as $A_n$) and powers of ten ($10^k$) to transform my intuitive observations into a rigorous logical framework.
 
