@@ -1,4 +1,4 @@
-def verify_julian_first_law(B, k, n):
+def verify_julian_first_law(B, k, max_n):
     # Calculate the Stable Tail (T)
     T = (B ** 2) % (10 ** k)
     # Calculate the Julian Constant (C)
@@ -7,7 +7,7 @@ def verify_julian_first_law(B, k, n):
     # Starting Leading Part (A_2)
     A = (B ** 2) // (10 ** k)
 
-    for n in range(3, n+1):
+    for n in range(3, max_n+1):
 
         # Applying Julian's First Law: A_n = B * A_{n-1} + C
         predict_A = B* A + C
@@ -19,9 +19,9 @@ def verify_julian_first_law(B, k, n):
         A = predict_A
 
         # Verify if the Law holds true
-        print(predict_A == actual_A)
+        print(f"n={n}: {predict_A == actual_A}")
 
 
 
 if __name__ == "__main__":
-    verify_julian_first_law(B=5, k=2,n=10)
+    verify_julian_first_law(B=5,  k=2, max_n=10)

@@ -178,7 +178,7 @@ Q.E.D
 I developed this Python script to ensure the mathematical integrity of Julian's First Law. 
 
 ```python
-def verify_julian_first_law(B, k, n):
+def verify_julian_first_law(B, k, max_n):
     # Calculate the Stable Tail (T)
     T = (B ** 2) % (10 ** k)
     # Calculate the Julian Constant (C)
@@ -187,9 +187,10 @@ def verify_julian_first_law(B, k, n):
     # Starting Leading Part (A_2)
     A = (B ** 2) // (10 ** k)
 
-    for n in range(3, n + 1):
+    for n in range(3, max_n+1):
+
         # Applying Julian's First Law: A_n = B * A_{n-1} + C
-        predict_A = B * A + C
+        predict_A = B* A + C
 
         # Calculating actual value for validation
         actual_A = (B ** n) // (10 ** k)
@@ -198,10 +199,12 @@ def verify_julian_first_law(B, k, n):
         A = predict_A
 
         # Verify if the Law holds true
-        print(predict_A == actual_A)
+        print(f"n={n}: {predict_A == actual_A}")
+
+
 
 if __name__ == "__main__":
-    verify_julian_first_law(B=5, k=2, n=10)
+    verify_julian_first_law(B=5,  k=2, max_n=10)
 ```
 ---
 
@@ -283,4 +286,4 @@ A deeper question remains: Do the Leading Parts of Recurstable Numbers share an 
 3. **Technical Synthesis:** As a 3rd-grade student, I adopted a collaborative approach to formalize my findings. My mother, Dong Cang, acted as my primary scribe, documenting my spoken logic and derivations. To ensure the final manuscript met international scientific standards, I utilized AI assistance to refine the academic terminology (e.g., Corollary, Terminal Stability). While the formal presentation was a collaborative effort, the mathematical discoveries and logical proofs remain my original work.
 ---
 
-**License:** This project is licensed under the MIT License - see the[ LICENSE](https://github.com/JulianWong310/GitHub-Portfolio/blob/main/2026_Grade3/%E2%AD%90%E2%AD%90project/2026_04_11_julian_recurstable_law/LICENSE) file for details.
+**License:** This project is licensed under the MIT License - see the LICENSE file for details.
