@@ -261,7 +261,7 @@ A **Recurstable Number** is a positive integer $B$ such that its power sequence 
 * **Necessity (The DNA Test):** For a tail to be stable, the last digit must satisfy $T_1^2 \equiv T_1 \pmod{10}$. Testing all single digits confirms that only $\{0, 1, 5, 6\}$ possess this inherent stability.
 * **Sufficiency (The Julian Link):** As established in **Corollary II**, these four digits are the only ones that guarantee the **Julian Constant ($C$)** is a whole number. This ensures the carry-over remains rhythmic and the linear recurrence structure never collapses.
 
-**Conclusion:** The Second Law defines the boundaries of the Recurstable universe. Outside of $\{0, 1, 5, 6\}$, the "stones" dropped into the lake are too chaotic to form a rhythmic ripple. Only bases ending in these four digits provide the 'mathematical fuel' required to sustain the linear recurrence.
+**Conclusion:** Julian's Second Law defines the boundaries of Linear Stability. While bases ending in 0, 1, 5, 6 provide the perfect 'mathematical fuel' for Julian’s First Law (Linear Recurrence),
 
 ---
 
