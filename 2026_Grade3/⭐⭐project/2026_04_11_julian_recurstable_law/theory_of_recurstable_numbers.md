@@ -255,12 +255,11 @@ Q.E.D.
 
 ---
 
-## 9. Future Work: Towards a Generalized Theory
+## 9. Future Work
 
 This study marks the beginning of our exploration into stable-tail sequences.
 
-**Initial observations suggest that the summation of Recurstable power sequences, $S_n = B_1^n + B_2^n$, also exhibits higher-order linear recurrence relations.**
-In my next paper, I plan to establish a **"Generalized Julian Theory"** to explain how these numbers interact. 
+A deeper question remains: Do the Leading Parts of Recurstable Numbers share an intrinsic relationship once their bases interact? This remains an open mystery that I hope to investigate through more data and observation.
 
 ---
 

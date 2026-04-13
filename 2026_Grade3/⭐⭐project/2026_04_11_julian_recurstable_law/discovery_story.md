@@ -5,7 +5,7 @@
 
 ## 中文版 (Chinese Version)
 
-周五下午，孩子在房间玩耍时，突然跟我说他有了一个新的数学发现。类似的“发现”我常听他提起——记得上一次他发现了 8 的整除规律，甚至知道百位数需要分奇偶来讨论。
+周五下午，Julian 在房间玩耍时，突然跟我说他有了一个新的数学发现。类似的“发现”我常听他提起——记得上一次他发现了 8 的整除规律，甚至知道百位数需要分奇偶来讨论。
 
 这次他告诉我，5 的幂（次方）总会得到以 25 结尾的数字。我正准备拿计算器验证，他却说： “妈妈，不用拿计算器。因为 $4 \times 25 = 100$，所以多出来的 25 总会留在末尾。”
 
@@ -19,7 +19,7 @@
 
 在此过程中，他再次提出了新的发现：所有以 0、1、5、6 结尾的数字都具有类似的性质。 他解释道：因为这些数字乘以自己后，末位依然是它本身，所以它们的幂在尾部一定是稳定的。基于此，我又协助他对这部分新发现也进行了证明和命名。
 
-考虑到他年龄尚小，不宜长时间使用电脑，大多时候是由我倾听他的口述并代为打字。我尝试用自己掌握的知识，尽可能用专业的学术词汇去“翻译”他的想法。历时两天，Julian 完成了他的第一份数学论文。
+考虑到他年龄尚小，不宜长时间使用电脑，大多时候是由我倾听他的口述并代为打字。我尝试用自己掌握的知识，尽可能用专业的学术词汇去“翻译”他的想法。Julian 初步勾勒出了他第一份数学研究的轮廓。
 
 我观察发现，Julian 喜欢在脑海中演化数学过程，而不习惯动笔。问及灵感来源，他说这些规律都是突然“乍现”并被捕捉到的。他展现出的数学直觉让我深感责任重大，唯有加倍努力，才能更好地引导他的成长。
 
@@ -42,7 +42,7 @@ Thinking this might be a niche branch of number theory worth documenting, I assi
 
 During this process, he made another discovery: all numbers ending in 0, 1, 5, or 6 share similar properties. He explained: because these numbers result in themselves when multiplied, their "tails" remain stable across their powers. Based on this, I assisted him in formalizing the proof and naming for this expansion as well.
 
-Given his young age, I listened to his dictation and typed for him, attempting to "translate" his insights into professional academic terminology. Over two days, Julian completed his very first math paper.
+Given his young age, I listened to his dictation and typed for him, attempting to "translate" his insights into professional academic terminology. Over two days, Julian has completed the first draft of his first math paper. 
 
 I’ve observed that Julian prefers to evolve mathematical processes entirely in his mind rather than on paper. When asked about his inspiration, he said these patterns just "flash" into his mind. The mathematical intuition he displays gives me a profound sense of responsibility; I know I must work twice as hard to guide his growth.
 
