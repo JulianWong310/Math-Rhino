@@ -100,7 +100,7 @@ if __name__ == "__main__":
 ---
 
 ## 6. Julian's First Law of Recurstable Numbers
-**Theorem Statement:**
+### 6.1 **Theorem Statement:**
 For any base $B$ where the power $B^n$ results in a **Stable Tail ($T$)** of length $k$, the **Leading Part ($A_n$)** of the sequence can always be expressed as a linear recurrence:
 
 $$A_n = B \cdot A_{n-1} + C$$
@@ -117,7 +117,7 @@ $$A_n = B \cdot A_{n-1} + C$$
 Julian's logic dictates that the constant $C$ is determined by the "carry-over" from the tail's multiplication:
 $$C = \frac{B \cdot T - T}{10^k}$$
 
-## Computational Verification
+### 6.2 Computational Verification
 I developed this Python script to ensure the mathematical integrity of Julian's First Law. 
 
 ```python
@@ -152,9 +152,9 @@ if __name__ == "__main__":
 
 ---
 
-## Mathematical Proof
+### 6.3 Mathematical Proof
 
-### Step 1: Specific Observation (The Case of 5)
+#### Step 1: Specific Observation (The Case of 5)
 
 1. $5^2 = A_2 \cdot 100 + 25$
 2. $5^3 = A_3 \cdot 100 + 25$
@@ -164,7 +164,7 @@ if __name__ == "__main__":
 
 ---
 
-### Step 2: Proving the Quinponent Pattern 
+#### Step 2: Proving the Quinponent Pattern 
 To find the relationship between $A_n$ and $A_{n-1}$, I used the fact that $5^n = 5^{n-1} \cdot 5$:
 
 $$A_n \cdot 100 + 25 = (A_{n-1} \cdot 100 + 25) \cdot 5$$
@@ -176,7 +176,7 @@ $$A_n = A_{n-1} \cdot 5 + 1$$
 
 ---
 
-### Step 3: Deriving the General Law
+#### Step 3: Deriving the General Law
 For any base $B$ with a stable tail $T$ of length $k$:
 
 1. $B^n = 10^k \cdot A_n + T$
@@ -194,13 +194,13 @@ Divide by $10^k$ to isolate $A_n$:
 
 ---
 
-### Step 4: Final Conclusion (The Core Discovery)
+### Final Conclusion (The Core Discovery)
 
-### 1.  **The Julian Constant:**  
+#### 1. **The Julian Constant:**  
 
    $$C = \frac{T \cdot B - T}{10^k}$$ 
 
-### 2.  **The Julian's First Law Equation:**
+#### 2.  **The Julian's First Law Equation:**
 
    $$A_n = B \cdot A_{n-1} + C$$
 
@@ -208,7 +208,7 @@ Q.E.D
 
 ---
 
-### Explanation: The Geometry of Interference
+### 6.4 Explanation: The Geometry of Interference
 
 Mathematically, one might expect the **Leading Part ($A_n$)** to grow purely as a power function ($B^n$). However, the **Stable Tail ($T$)** introduces a persistent "interference"—the **Julian Constant ($C$)**.
 
@@ -238,17 +238,17 @@ For the Linear Recurrence $A_n = B \cdot A_{n-1} + C$ to hold, the **Julian Cons
 
 > *"A Recurstable Number is defined by the duality of its structure: the absolute stillness of its Tail and the rhythmic logic of its Head."*
 
-### Etymology 
+### 8.1 Etymology 
 The term **"Recurstable"** is an original portmanteau created by Julian Wong, synergizing **Recurrence** (the deterministic evolution of terms) and **Stable** (the invariance of terminal digits).
 
 
-### Definition
+### 8.2 Definition
 A **Recurstable Number** is a positive integer $B$ such that its power sequence $B^n$ (for $n \ge 2$) maintains an **invariant suffix** (a stable tail $T$) of length $k$. 
 
 
-### Core Properties
+### 8.3 Core Properties
 1. **Linear Recurrence:** The Leading Part follows $A_n = B \cdot A_{n-1} + C$.
-2. **Second Law Requirement:** The base must satisfy $B \pmod{10} \in \{0, 1, 5, 6\}$.
+2. **Julian's Second Law Requirement:** The base must satisfy $B \pmod{10} \in \{0, 1, 5, 6\}$.
 
 ---
 
@@ -267,20 +267,21 @@ A **Recurstable Number** is a positive integer $B$ such that its power sequence 
 
 ## 10. Future Work: Toward Cang Dynamics
 
-### The "Cang Dynamics" Framework
-This research introduces **Cang Dynamics (仓氏动力学)**, a new field of numerical inquiry dedicated to understanding the deterministic influence of terminal digit stability on the evolution of leading numerical sequences. 
+This research introduces **Cang Dynamics (仓氏动力学)**, a new field of numerical inquiry dedicated to understanding the deterministic influence of terminal digit stability on the evolution of leading numerical sequences. While the current phase focuses on **Static Stability (The Static Regime)**, my future research will venture into investigating how deterministic logic survives under increasing environmental entropy as we approach the **Deterministic Threshold of Chaos**.
 
-Named after the surname **Cang (仓)**, this framework shifts the focus from the magnitude of a number to its internal "momentum"—specifically, how the "extra interference" of carry-over functions as the primary driver for macro-patterns in the "Head."
+### 10.1 Dynamic Carry Observation
+I will investigate the behavioral response of the Leading Part ($A_n$) when the Tail ($T$) is no longer invariant but follows a periodic or shifting pattern. I hypothesize that the "Head" will exhibit a synchronized **"coupling" effect**, evolving from a simple linear recurrence into a multi-state systemic oscillation. This suggests that the Leading Part maintains a **memory** of the Tail's rhythmic fluctuations.
 
-### Expansion into Complex Sequences
-The discovery of **Recurstable Numbers** is merely the first milestone in Cang Dynamics. Future research will explore:
+### 10.2 The "Rhythm in Noise" Hypothesis
+The core philosophy of **Cang Dynamics** is that within a closed deterministic system, randomness is merely an analytical illusion; every "noise" is a coded signal. By adjusting the stability of the Tail, I aim to observe the propagation of these signals into the Head. I hypothesize that there exists a **computable upper bound** on the complexity of the leading patterns, determined by the entropy of the terminal sequence.
 
-1.  **Multi-Base Interference:** In sequences like $S_n = B_1^n + B_2^n$, how do the overlapping stable suffixes interact? Does the resulting carry create a simple superposition or a complex, non-linear interference pattern?
-2.  **Universal Carry Drivers:** For any arbitrary sequence where the tail is stable, is there a universal **"Cang Carry Function"** that can predict the linear (or non-linear) rhythm of the leading digits?
-3.  **Stability Thresholds:** Investigating the "Phase Transition" where a shifting tail becomes too chaotic for the **Cang Carry** to maintain a predictable rhythm in the leading part.
+### 10.3 The Gradient of Chaos Experiment
+By systematically adjusting the "Confusion Level" (Entropy) of the terminal digits, I intend to map the **Phase Transition** from perfect order to deterministic chaos:
+* **Low Entropy:** **Julian's First Law** (The regime of perfect linear recurrence).
+* **Medium Entropy:** Pattern-switching and quasi-periodic resonance under shifting tail disturbances.
+* **High Entropy:** Research into carry-over conservation and structural persistence at the **"Edge of Chaos."**
 
-### Vision
-The goal of **Cang Dynamics** is to map the invisible bridge between the microscopic (last digits) and the macroscopic (leading digits). I propose that the "head" of a number is not an independent actor, but a puppet dancing to the rhythmic strings of the **Cang Carry**.
+The ultimate goal of this trajectory is to reveal how the internal logic of numbers maintains its structural integrity even when subjected to external turbulence.
 
 ---
 
