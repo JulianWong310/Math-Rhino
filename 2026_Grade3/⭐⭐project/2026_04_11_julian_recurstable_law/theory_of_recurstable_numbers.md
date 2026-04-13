@@ -9,8 +9,7 @@
 ---
 
 Hi! I am a 3rd grade student. While exploring the powers of 5 today, I discovered a super cool secret hidden within the numbers. I am naming this discovery the 'Julian's First Law' and calling these types of integers 'Recurstable Numbers'.
-Through this study, I demonstrate that the 'leading digits' of these power sequences are not random, but follow a deterministic linear recurrence influenced by the carry-overs from a stable terminal suffix.
-
+I discovered that for powers of numbers with stable tails, the leading digits follow a linear recurrence pattern. Furthermore, I identified that the constant term in this pattern is the direct result of the 'carry-over' from the stable tail, which acts as the deterministic cause behind the leading digits' growth.
 
 ---
 
@@ -118,6 +117,41 @@ $$A_n = B \cdot A_{n-1} + C$$
 Julian's logic dictates that the constant $C$ is determined by the "carry-over" from the tail's multiplication:
 $$C = \frac{B \cdot T - T}{10^k}$$
 
+## Computational Verification
+I developed this Python script to ensure the mathematical integrity of Julian's First Law. 
+
+```python
+def verify_julian_first_law(B, k, max_n):
+    # Calculate the Stable Tail (T)
+    T = (B ** 2) % (10 ** k)
+    # Calculate the Julian Constant (C)
+    C = (B * T - T) // (10 ** k)
+
+    # Starting Leading Part (A_2)
+    A = (B ** 2) // (10 ** k)
+
+    for n in range(3, max_n+1):
+
+        # Applying Julian's First Law: A_n = B * A_{n-1} + C
+        predict_A = B* A + C
+
+        # Calculating actual value for validation
+        actual_A = (B ** n) // (10 ** k)
+
+        # Iterating: The current prediction becomes the base for the next power
+        A = predict_A
+
+        # Verify if the Law holds true
+        print(f"n={n}: {predict_A == actual_A}")
+
+
+
+if __name__ == "__main__":
+    verify_julian_first_law(B=5,  k=2, max_n=10)
+```
+
+---
+
 ## Mathematical Proof
 
 ### Step 1: Specific Observation (The Case of 5)
@@ -174,93 +208,79 @@ Q.E.D
 
 ---
 
-## Computational Verification
-I developed this Python script to ensure the mathematical integrity of Julian's First Law. 
+### Explanation: The Geometry of Interference
 
-```python
-def verify_julian_first_law(B, k, max_n):
-    # Calculate the Stable Tail (T)
-    T = (B ** 2) % (10 ** k)
-    # Calculate the Julian Constant (C)
-    C = (B * T - T) // (10 ** k)
+Mathematically, one might expect the **Leading Part ($A_n$)** to grow purely as a power function ($B^n$). However, the **Stable Tail ($T$)** introduces a persistent "interference"—the **Julian Constant ($C$)**.
 
-    # Starting Leading Part (A_2)
-    A = (B ** 2) // (10 ** k)
+Imagine a perfectly calm lake representing the growth of a number. Multiplying by the base should create a smooth, predictable wave. But the stable tail acts like a **small stone dropped into the water** at every step. This stone creates a ripple that shifts the Leading Part away from its original trajectory. 
 
-    for n in range(3, max_n+1):
-
-        # Applying Julian's First Law: A_n = B * A_{n-1} + C
-        predict_A = B* A + C
-
-        # Calculating actual value for validation
-        actual_A = (B ** n) // (10 ** k)
-
-        # Iterating: The current prediction becomes the base for the next power
-        A = predict_A
-
-        # Verify if the Law holds true
-        print(f"n={n}: {predict_A == actual_A}")
-
-
-
-if __name__ == "__main__":
-    verify_julian_first_law(B=5,  k=2, max_n=10)
-```
----
-
-### **Julian's First Law Corollary:** 
-According to *The Julian Constant*, this linear pattern only works because the Tail ($T$) is **Stable**. If the tail were not stable, the constant $C$ would break, and the pattern would disappear!
+The beauty of **Julian's First Law** is the discovery that this shift is not random. It is a **deterministic offset**. By identifying the Julian Constant, we have mapped the exact "ripple effect" caused by the tail, proving that what looks like a deviation is actually a perfectly fixed, rhythmic law.
 
 ---
 
-## 7. Recurstable Numbers & The Julian Class
+## 7. Julian's First Law Corollaries
+
+### **I. The Stability Requirement**
+According to the derivation of the **Julian Constant**, this linear recurrence exists only because the **Tail ($T$)** remains **invariant (stable)**. If the tail were unstable, the constant $C$ would become a variable, causing the linear structure of the Leading Part to collapse.
+
+### **II. The Integrality Guarantee**
+For the Linear Recurrence $A_n = B \cdot A_{n-1} + C$ to hold, the **Julian Constant ($C$)** must be an integer. We can verify this for all stable-tail bases ending in $T_1 \in \{0, 1, 5, 6\}$:
+
+* **For 0 and 1:** The product $T_1(B-1)$ is always $0$, which is naturally divisible by $10$.
+* **For 5:** Since the base $B$ ends in $5$, $(B-1)$ must be an even number. Any even number multiplied by $5$ results in a multiple of $10$.
+* **For 6:** Since the base $B$ ends in $6$, $(B-1)$ must end in $5$. The product $6 \times 5 = 30$, which is also a multiple of $10$.
+
+**Conclusion:** Only bases ending in 0, 1, 5, or 6 can guarantee that the Julian Constant ($C$) is always a whole number.
+
+---
+
+## 8. Definition & Properties of Recurstable Numbers
+
+> *"A Recurstable Number is defined by the duality of its structure: the absolute stillness of its Tail and the rhythmic logic of its Head."*
 
 ### Etymology 
 The term **"Recurstable"** is an original portmanteau created by Julian Wong, synergizing **Recurrence** (the deterministic evolution of terms) and **Stable** (the invariance of terminal digits).
 
+
 ### Definition
-> *"A Recurstable Number is defined by the duality of its structure: the absolute stillness of its Tail and the rhythmic logic of its Head."*
+A **Recurstable Number** is a positive integer $B$ such that its power sequence $B^n$ (for $n \ge 2$) maintains an **invariant suffix** (a stable tail $T$) of length $k$. 
 
-A **Recurstable Number** is a positive integer $B$ such that for its power sequence $B^n$ (where $n \geq 2$), the following two conditions are satisfied:
 
-1. **Terminal Stability (The Tail):** The sequence maintains an invariant suffix of $k$ digits ($T$). This constant "Tail" forms the static mathematical foundation upon which all subsequent logic is built.
-
-2. **Logical Leading (The Head):** The leading part $A_n$ (whether analyzed as a comprehensive numerical block or through individual digital positions) exhibits a **deterministic logical structure**. 
-
-This structure encompasses all forms of deterministic digital structure emerging from the stability of the tail, including but not limited to:
-* **Global Relations:** Where the entire leading part follows a unified mathematical model, such as the **Linear Recurrence Relation** ($A_n = B \cdot A_{n-1} + C$) defined as the **Julian Class**.
-* **Local Relations:** Where specific digits or subsets of digits follow their own independent patterns, such as the periodic $\{1, 6\}$ **hundreds-digit pattern** observed in the powers of $5$.
-
-### Classification: The Julian Class
-Within the family of Recurstable Numbers, those that follow a unified mathematical model are categorized as the **Julian Class**.
+### Core Properties
+1. **Linear Recurrence:** The Leading Part follows $A_n = B \cdot A_{n-1} + C$.
+2. **Second Law Requirement:** The base must satisfy $B \pmod{10} \in \{0, 1, 5, 6\}$.
 
 ---
 
-## 8.Julian’s Second Law of Recurstable Numbers
-**Theorem Statement:**
-A positive integer $B$ is a **Recurstable Number** if and only if its last digit $T_1 \in \{0, 1, 5, 6\}$. 
+## 8. Julian’s Second Law of Recurstable Numbers
 
-###  Mathematical Proof
+**Theorem Statement:** A positive integer $B$ is a Recurstable Number **if and only if** its terminal digit $B \pmod{10} \in \{0, 1, 5, 6\}$. 
 
-To find a Recurstable Number, we only need to pass its two conditions:
+**Mathematical Intuition:**
 
-1. **Terminal Stability:** Only $\{0, 1, 5, 6\}$ have a "fixed tail" when multiplied by themselves. All other digits are rejected immediately because they are unstable.
+* **Necessity (The DNA Test):** For a tail to be stable, the last digit must satisfy $T_1^2 \equiv T_1 \pmod{10}$. Testing all single digits confirms that only $\{0, 1, 5, 6\}$ possess this inherent stability.
+* **Sufficiency (The Julian Link):** As established in **Corollary II**, these four digits are the only ones that guarantee the **Julian Constant ($C$)** is a whole number. This ensures the carry-over remains rhythmic and the linear recurrence structure never collapses.
 
-2. **Logical Leading:** The leading part $A_n$ must exhibit either Global or Local logic.
-For Global Logic: As proven in Julian's First Law, the Julian Constant $C = \frac{T_1(B-1)}{10}$ must be an integer.
-   * For **0 and 1**, the product $T_1(B-1)$ clearly ends in 0.
-   * For **5**, $(B-1)$ is even, so $5 \times \text{even} = \dots0$.
-   * For **6**, $(B-1)$ ends in 5, so $6 \times 5 = 30$.
-
-**Conclusion:** Since $\{0, 1, 5, 6\}$ are the only digits that pass both tests, any number ending in these digits is guaranteed to be Recurstable; conversely, all Recurstable numbers must end in 0, 1, 5, or 6. 
-
-Q.E.D.
+**Conclusion:** The Second Law defines the boundaries of the Recurstable universe. Outside of $\{0, 1, 5, 6\}$, the "stones" dropped into the lake are too chaotic to form a rhythmic ripple. Only bases ending in these four digits provide the 'mathematical fuel' required to sustain the linear recurrence.
 
 ---
 
-## 9. Future Work: Toward "Decimal Carry Dynamics"
+## 9. Future Work: Toward Cang Dynamics
 
-This work marks the beginning of our exploration into stable-tail sequences. A deeper question remains: Is there an intrinsic link between the leading parts once their bases interact? This is still an open mystery—a field I call Decimal Carry Dynamics. I look forward to investigating this hidden rhythm through more data and closer observation.
+### The "Cang Dynamics" Framework
+This research introduces **Cang Dynamics (仓氏动力学)**, a new field of numerical inquiry dedicated to understanding the deterministic influence of terminal digit stability on the evolution of leading numerical sequences. 
+
+Named in honor of the author's mother (surname **Cang, 仓**), this framework shifts the focus from the magnitude of a number to its internal "momentum"—specifically, how the "extra interference" of carry-over functions as the primary driver for macro-patterns in the "Head."
+
+### Expansion into Complex Sequences
+The discovery of **Recurstable Numbers** is merely the first milestone in Cang Dynamics. Future research will explore:
+
+1.  **Multi-Base Interference:** In sequences like $S_n = B_1^n + B_2^n$, how do the overlapping stable suffixes interact? Does the resulting carry create a simple superposition or a complex, non-linear interference pattern?
+2.  **Universal Carry Drivers:** For any arbitrary sequence where the tail is stable, is there a universal **"Cang Carry Function"** that can predict the linear (or non-linear) rhythm of the leading digits?
+3.  **Stability Thresholds:** Investigating the "Phase Transition" where a shifting tail becomes too chaotic for the **Cang Carry** to maintain a predictable rhythm in the leading part.
+
+### Vision
+The goal of **Cang Dynamics** is to map the invisible bridge between the microscopic (last digits) and the macroscopic (leading digits). I propose that the "head" of a number is not an independent actor, but a puppet dancing to the rhythmic strings of the **Cang Carry**.
 
 ---
 
