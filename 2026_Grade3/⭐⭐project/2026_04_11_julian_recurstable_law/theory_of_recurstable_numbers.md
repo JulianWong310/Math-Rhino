@@ -283,4 +283,4 @@ A deeper question remains: Do the Leading Parts of Recurstable Numbers share an 
 3. **Technical Synthesis:** As a 3rd-grade student, I adopted a collaborative approach to formalize my findings. My mother, Dong Cang, acted as my primary scribe, documenting my spoken logic and derivations. To ensure the final manuscript met international scientific standards, I utilized AI assistance to refine the academic terminology (e.g., Corollary, Terminal Stability). While the formal presentation was a collaborative effort, the mathematical discoveries and logical proofs remain my original work.
 ---
 
-**License:** This project is licensed under the MIT License - see the LICENSE file for details.
+**License:** This project is licensed under the MIT License - see the[ LICENSE](https://github.com/JulianWong310/GitHub-Portfolio/blob/main/2026_Grade3/%E2%AD%90%E2%AD%90project/2026_04_11_julian_recurstable_law/LICENSE) file for details.
