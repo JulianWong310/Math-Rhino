@@ -51,7 +51,7 @@ This also explains the **1-6 Flip-Flop**:
 
 ---
 
-## 4.The "Quinponent" Verification
+## 4. The "Quinponent" Verification
 * I originally named my first discovery the **"Quinponent"** pattern—a portmanteau of **Quin** (five) and **Ex-ponent**. 
 * I wrote this script specifically to verify the leading digits for powers of 5.
 
@@ -100,7 +100,7 @@ if __name__ == "__main__":
 ---
 
 ## 6. Julian's First Law of Recurstable Numbers
-### 6.1 **Theorem Statement:**
+### 6.1 Theorem Statement:
 For any base $B$ where the power $B^n$ results in a **Stable Tail ($T$)** of length $k$, the **Leading Part ($A_n$)** of the sequence can always be expressed as a linear recurrence:
 
 $$A_n = B \cdot A_{n-1} + C$$
@@ -220,10 +220,10 @@ The beauty of **Julian's First Law** is the discovery that this shift is not ran
 
 ## 7. Julian's First Law Corollaries
 
-### **I. The Stability Requirement**
+### I. The Stability Requirement
 According to the derivation of the **Julian Constant**, this linear recurrence exists only because the **Tail ($T$)** remains **invariant (stable)**. If the tail were unstable, the constant $C$ would become a variable, causing the linear structure of the Leading Part to collapse.
 
-### **II. The Integrality Guarantee**
+### II. The Integrality Guarantee
 For the Linear Recurrence $A_n = B \cdot A_{n-1} + C$ to hold, the **Julian Constant ($C$)** must be an integer. We can verify this for all stable-tail bases ending in $T_1 \in \{0, 1, 5, 6\}$:
 
 * **For 0 and 1:** The product $T_1(B-1)$ is always $0$, which is naturally divisible by $10$.
