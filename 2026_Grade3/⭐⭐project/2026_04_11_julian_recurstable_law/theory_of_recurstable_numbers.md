@@ -9,7 +9,7 @@
 ---
 
 Hi! I am a 3rd grade student. While exploring the powers of 5 today, I discovered a super cool secret hidden within the numbers. I am naming this discovery the 'Julian's First Law' and calling these types of integers 'Recurstable Numbers'.
-
+Through this study, I demonstrate that the 'leading digits' of these power sequences are not random, but follow a deterministic linear recurrence influenced by the carry-overs from a stable terminal suffix.
 
 
 ---
@@ -258,11 +258,9 @@ Q.E.D.
 
 ---
 
-## 9. Future Work
+## 9. Future Work: Toward "Decimal Carry Dynamics"
 
-This study marks the beginning of our exploration into stable-tail sequences.
-
-A deeper question remains: Do the Leading Parts of Recurstable Numbers share an intrinsic relationship once their bases interact? This remains an open mystery that I hope to investigate through more data and observation.
+This work marks the beginning of our exploration into stable-tail sequences. A deeper question remains: Is there an intrinsic link between the leading parts once their bases interact? This is still an open mystery—a field I call Decimal Carry Dynamics. I look forward to investigating this hidden rhythm through more data and closer observation.
 
 ---
 
