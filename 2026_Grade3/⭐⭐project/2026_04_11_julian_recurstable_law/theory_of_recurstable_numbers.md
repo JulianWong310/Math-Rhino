@@ -68,19 +68,7 @@ if __name__ == "__main__":
 ```
 
 ## 5. Are there any similar numbers?
-I wrote a Python 'detector' to hunt for numbers that keep their same tail when multiplied.
-```python
-def find_similar_numbers(base, k):
-    results = []
-    for i in range(2, base):
-        # Checking if the last k digits remain invariant when squared
-        if (i ** 2) % (10 ** k) == i % (10 ** k):
-            results.append(i)
-    return results
-
-if __name__ == "__main__":
-    print(find_similar_numbers(100, 2))
-```
+Through computational testing, I identified a class of numbers that follow the same recursive patterns as base 5.
 
 | Tail Length ($k$) | Base ($B$) | Stable Tail ($T$) | Constant ($C$) | Recursive Formula          |
 |:------------------|:-----------|:------------------|:---------------|:---------------------------|
@@ -95,7 +83,6 @@ if __name__ == "__main__":
 | **3**             | 25         | 625               | **15**         | $A_n = 25(A_{n-1}) + 15$   |
 | **3**             | 376        | 376               | **141**        | $A_n = 376(A_{n-1}) + 141$ |
 | **3**             | 425        | 625               | **265**        | $A_n = 425(A_{n-1}) + 265$ |
-
 
 ---
 
@@ -229,8 +216,10 @@ For the Linear Recurrence $A_n = B \cdot A_{n-1} + C$ to hold, the **Julian Cons
 * **For 0 and 1:** The product $T_1(B-1)$ is always $0$, which is naturally divisible by $10$.
 * **For 5:** Since the base $B$ ends in $5$, $(B-1)$ must be an even number. Any even number multiplied by $5$ results in a multiple of $10$.
 * **For 6:** Since the base $B$ ends in $6$, $(B-1)$ must end in $5$. The product $6 \times 5 = 30$, which is also a multiple of $10$.
+* **Note:** The verification above uses the case $k = 1$ (i.e., the last digit).
+For k > 1, if C is an integer then $10^k$ divides $T × (B−1)$, which implies $10$ also divides $T × (B−1)$. Hence the last‑digit condition must still hold. 
 
-**Conclusion:** Only bases ending in 0, 1, 5, or 6 can guarantee that the Julian Constant ($C$) is always a whole number.
+*  **conclusion** — that $B$ must end in $0$, $1$, $5$, or $6$ — applies for any tail length $k$.
 
 ---
 
@@ -265,15 +254,15 @@ A **Recurstable Number** is a positive integer $B$ such that its power sequence 
 
 ---
 
-## 10. Future Work: Toward Cang Dynamics
+## 10. Future Work: Toward Julian Carry Dynamics
 
-This research introduces **Cang Dynamics (仓氏动力学)**, a new field of numerical inquiry dedicated to understanding the deterministic influence of terminal digit stability on the evolution of leading numerical sequences. While the current phase focuses on **Static Stability (The Static Regime)**, my future research will venture into investigating how deterministic logic survives under increasing environmental entropy as we approach the **Deterministic Threshold of Chaos**.
+This research introduces **Julian Carry Dynamics**, a new field of numerical inquiry dedicated to understanding the deterministic influence of terminal digit stability on the evolution of leading numerical sequences. While the current phase focuses on **Static Stability (The Static Regime)**, my future research will venture into investigating how deterministic logic survives under increasing environmental entropy as we approach the **Deterministic Threshold of Chaos**.
 
 ### 10.1 Dynamic Carry Observation
 I will investigate the behavioral response of the Leading Part ($A_n$) when the Tail ($T$) is no longer invariant but follows a periodic or shifting pattern. I hypothesize that the "Head" will exhibit a synchronized **"coupling" effect**, evolving from a simple linear recurrence into a multi-state systemic oscillation. This suggests that the Leading Part maintains a **memory** of the Tail's rhythmic fluctuations.
 
 ### 10.2 The "Rhythm in Noise" Hypothesis
-The core philosophy of **Cang Dynamics** is that within a closed deterministic system, randomness is merely an analytical illusion; every "noise" is a coded signal. By adjusting the stability of the Tail, I aim to observe the propagation of these signals into the Head. I hypothesize that there exists a **computable upper bound** on the complexity of the leading patterns, determined by the entropy of the terminal sequence.
+The core philosophy of **Julian Carry Dynamics** is that within a closed deterministic system, randomness is merely an analytical illusion; every "noise" is a coded signal. By adjusting the stability of the Tail, I aim to observe the propagation of these signals into the Head. I hypothesize that there exists a **computable upper bound** on the complexity of the leading patterns, determined by the entropy of the terminal sequence.
 
 ### 10.3 The Gradient of Chaos Experiment
 By systematically adjusting the "Confusion Level" (Entropy) of the terminal digits, I intend to map the **Phase Transition** from perfect order to deterministic chaos:
@@ -288,14 +277,14 @@ The ultimate goal of this trajectory is to reveal how the internal logic of numb
 ## 11. Acknowledgments & Research Methodology
 
 1. **Intellectual Property & Naming Rights Assertion:**
-The core theoretical framework and mathematical insights presented in this study are the independent discoveries of **Julian Wong**. As the primary investigator, Julian Wong asserts full naming rights and intellectual priority over the following established terminology:
+The core theoretical framework and mathematical insights presented in this study are the independent discoveries of **Julian Wong**. As the primary investigator, Julian Wong claims full naming rights and intellectual priority over the following established terminology:
 
       * **Recurstable Numbers:** The overarching classification for integers with stable-tail power sequences.
       * **Julian’s First Law:** The linear recurrence relation $A_n = B \cdot A_{n-1} + C$.
       * **The Julian Constant ($C$):** The deterministic integer representing carry-over dynamics.
       * **The "Quinponent" Pattern:** The foundational discovery specific to powers of 5.
       * **Julian’s Second Law:** The $\{0, 1, 5, 6\}$ existence criterion for Recurstable Numbers.
-      * **Cang Dynamics (仓氏动力学):** The prospective field investigating terminal stability as a driver for leading-digit momentum (named in honor of the author's mother, surname **Cang**).
+      * **Julian Carry Dynamics:** The prospective field investigating terminal stability as a driver for leading-digit momentum.
 
 
 2. **Mathematical Guidance:** I would like to express my deepest gratitude to my mother, **Dong Cang**. She introduced me to formal algebraic methods, guiding me to use variables (such as $A_n$) and powers of ten ($10^k$) to transform my intuitive observations into a rigorous logical framework.
