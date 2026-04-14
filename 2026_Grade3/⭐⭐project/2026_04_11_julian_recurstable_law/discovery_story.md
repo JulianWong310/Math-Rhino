@@ -21,6 +21,8 @@
 
 考虑到他年龄尚小，不宜长时间使用电脑，大多时候是由我倾听他的口述并代为打字。我尝试用自己掌握的知识，尽可能用专业的学术词汇去“翻译”他的想法。Julian 初步勾勒出了他第一份数学研究的轮廓。
 
+但在推导的终点，他反而提出了更多深邃的问题：比如，如果将多个‘尾数稳定数’（Recurstable Numbers）相加，是否依然存在某种普适的恒定规律？如果尾数本身是不稳定的，其中是否也潜伏着尚未被发现的秩序？我告诉他：孩子，妈妈会陪着你，我们一起去把这些规律找出来。”
+
 我观察发现，Julian 喜欢在脑海中演化数学过程，而不习惯动笔。问及灵感来源，他说这些规律都是突然“乍现”并被捕捉到的。他展现出的数学直觉让我深感责任重大，唯有加倍努力，才能更好地引导他的成长。
 
 ---
@@ -42,18 +44,9 @@ Thinking this might be a niche branch of number theory worth documenting, I assi
 
 During this process, he made another discovery: all numbers ending in 0, 1, 5, or 6 share similar properties. He explained: because these numbers result in themselves when multiplied, their "tails" remain stable across their powers. Based on this, I assisted him in formalizing the proof and naming for this expansion as well.
 
-Given his young age, I listened to his dictation and typed for him, attempting to "translate" his insights into professional academic terminology. Over two days, Julian has completed the first draft of his first math paper. 
+Given his young age, I listened to his dictation and typed for him, attempting to "translate" his insights into professional academic terminology. Over two days, Julian has completed the first draft of his first math paper.
+Yet, his curiosity didn't stop there. He began raising deeper questions: What happens if we add two Recurstable Numbers together? Is there a universal law hidden within? And if the terminal digits are unstable, can we still find a pattern of order?
+I told him: "Mama will be right there with you to discover these laws, one by one."
 
 I’ve observed that Julian prefers to evolve mathematical processes entirely in his mind rather than on paper. When asked about his inspiration, he said these patterns just "flash" into his mind. The mathematical intuition he displays gives me a profound sense of responsibility; I know I must work twice as hard to guide his growth.
-
-
-
-
-
-
-
-
-
-
-
 

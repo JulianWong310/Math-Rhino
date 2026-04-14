@@ -9,7 +9,7 @@
 ---
 
 Hi! I am a 3rd grade student. While exploring the powers of 5 today, I discovered a super cool secret hidden within the numbers. I am naming this discovery the 'Julian's First Law' and calling these types of integers 'Recurstable Numbers'.
-I discovered that for powers of numbers with stable tails, the leading digits follow a linear recurrence pattern. Furthermore, I identified that the constant term in this pattern is the direct result of the 'carry-over' from the stable tail, which acts as the deterministic cause behind the leading digits' growth.
+I discovered that for powers of numbers with stable tails, the leading digits follow a linear recurrence pattern. Furthermore, I identified that the constant term in this pattern is the direct result of the carry-over from the stable tail, which acts as the deterministic cause behind the leading digits' growth.
 
 ---
 
@@ -20,7 +20,7 @@ I discovered that for powers of numbers with stable tails, the leading digits fo
 3. Let $A_n$ be the **leading digits** of $5^n$ (the number formed by removing the last two digits, $25$). 
 
 The relationship between the current leading digits ($A_n$) and the previous leading digits ($A_{n-1}$) is defined by the formula:
-$$A_n = 5(A_{n-1}) + 1$$
+$$A_n = 5A_{n-1} + 1$$
 
 ---
 
@@ -58,9 +58,9 @@ This also explains the **1-6 Flip-Flop**:
 ```python
 def verify_quinponent(n):
     front = 0  # Starting with 5^2
-    for n in range(2, n + 1):
-        result = 5**n
-        print(f"5^{n} = {result} | Leading part is {front}")
+    for i in range(2, n + 1):
+        result = 5**i
+        print(f"5^{i} = {result} | Leading part is {front}")
         front = front * 5 + 1
 
 if __name__ == "__main__":
@@ -90,7 +90,7 @@ Through computational testing, I identified a class of numbers that follow the s
 ### 6.1 Theorem Statement:
 For any base $B$ where the power $B^n$ results in a **Stable Tail ($T$)** of length $k$, the **Leading Part ($A_n$)** of the sequence can always be expressed as a linear recurrence:
 
-$$A_n = B \cdot A_{n-1} + C$$
+$$A_n = B \cdot A_{n-1} + C_J $$
 
 **Variable Definitions**
 * **$A_n$**: The "Leading Part" of the number, calculated as the integer value remaining after removing the last $k$ digits (the stable tail).
@@ -98,11 +98,11 @@ $$A_n = B \cdot A_{n-1} + C$$
 * **$n$**: The exponent ($n \ge 2$).
 * **$T$ :** The recurring ending value of $B^n$.
 * **$k$ :** The number of digits in $T$.
-* **$C$ (The Julian Constant)**: A fixed integer derived from the interaction between the base and the stable tail. 
+* **$C_J$ (The Julian Constant)**: A fixed integer derived from the interaction between the base and the stable tail. 
 
 **The Julian Constant Formula:**
-Julian's logic dictates that the constant $C$ is determined by the "carry-over" from the tail's multiplication:
-$$C = \frac{B \cdot T - T}{10^k}$$
+Julian's logic dictates that the constant $C_J$ is determined by the "carry-over" from the tail's multiplication:
+$$C_J = \frac{B \cdot T - T}{10^k}$$
 
 ### 6.2 Computational Verification
 I developed this Python script to ensure the mathematical integrity of Julian's First Law. 
@@ -111,16 +111,16 @@ I developed this Python script to ensure the mathematical integrity of Julian's 
 def verify_julian_first_law(B, k, max_n):
     # Calculate the Stable Tail (T)
     T = (B ** 2) % (10 ** k)
-    # Calculate the Julian Constant (C)
-    C = (B * T - T) // (10 ** k)
+    # Calculate the Julian Constant (C_J)
+    C_J = (B * T - T) // (10 ** k)
 
     # Starting Leading Part (A_2)
     A = (B ** 2) // (10 ** k)
 
     for n in range(3, max_n+1):
 
-        # Applying Julian's First Law: A_n = B * A_{n-1} + C
-        predict_A = B* A + C
+        # Applying Julian's First Law: A_n = B * A_{n-1} + C_J
+        predict_A = B* A + C_J
 
         # Calculating actual value for validation
         actual_A = (B ** n) // (10 ** k)
@@ -156,6 +156,7 @@ To find the relationship between $A_n$ and $A_{n-1}$, I used the fact that $5^n 
 
 $$A_n \cdot 100 + 25 = (A_{n-1} \cdot 100 + 25) \cdot 5$$
 $$A_n \cdot 100 + 25 = A_{n-1} \cdot 500 + 125$$
+$$A_n \cdot 100 + 25 = A_{n-1} \cdot 500 + 100+25$$
 $$A_n \cdot 100 + 25 = 100(A_{n-1} \cdot 5 + 1) + 25$$
 
 By canceling the $25$ and dividing by $100$:
@@ -185,11 +186,11 @@ Divide by $10^k$ to isolate $A_n$:
 
 #### 1. **The Julian Constant:**  
 
-   $$C = \frac{T \cdot B - T}{10^k}$$ 
+   $$C_J= \frac{T \cdot B - T}{10^k}$$ 
 
 #### 2.  **The Julian's First Law Equation:**
 
-   $$A_n = B \cdot A_{n-1} + C$$
+   $$A_n = B \cdot A_{n-1} + C_J$$
 
 Q.E.D
 
@@ -197,7 +198,7 @@ Q.E.D
 
 ### 6.4 Explanation: The Geometry of Interference
 
-Mathematically, one might expect the **Leading Part ($A_n$)** to grow purely as a power function ($B^n$). However, the **Stable Tail ($T$)** introduces a persistent "interference"—the **Julian Constant ($C$)**.
+Mathematically, one might expect the **Leading Part ($A_n$)** to grow purely as a power function ($B^n$). However, the **Stable Tail ($T$)** introduces a persistent "interference"—the **Julian Constant ($C_J$)**.
 
 Imagine a perfectly calm lake representing the growth of a number. Multiplying by the base should create a smooth, predictable wave. But the stable tail acts like a **small stone dropped into the water** at every step. This stone creates a ripple that shifts the Leading Part away from its original trajectory. 
 
@@ -208,18 +209,18 @@ The beauty of **Julian's First Law** is the discovery that this shift is not ran
 ## 7. Julian's First Law Corollaries
 
 ### I. The Stability Requirement
-According to the derivation of the **Julian Constant**, this linear recurrence exists only because the **Tail ($T$)** remains **invariant (stable)**. If the tail were unstable, the constant $C$ would become a variable, causing the linear structure of the Leading Part to collapse.
+According to the derivation of the **Julian Constant**, this linear recurrence exists only because the **Tail ($T$)** remains **invariant (stable)**. If the tail were unstable, the constant ($C_J$) would become a variable, causing the linear structure of the Leading Part to collapse.
 
 ### II. The Integrality Guarantee
-For the Linear Recurrence $A_n = B \cdot A_{n-1} + C$ to hold, the **Julian Constant ($C$)** must be an integer. We can verify this for all stable-tail bases ending in $T_1 \in \{0, 1, 5, 6\}$:
+For the Linear Recurrence $A_n = B \cdot A_{n-1} + C_J$ to hold, the **Julian Constant ($C_J$)** must be an integer. We can verify this for all stable-tail bases ending in $T_1 \in \{0, 1, 5, 6\}$:
 
 * **For 0 and 1:** The product $T_1(B-1)$ is always $0$, which is naturally divisible by $10$.
 * **For 5:** Since the base $B$ ends in $5$, $(B-1)$ must be an even number. Any even number multiplied by $5$ results in a multiple of $10$.
 * **For 6:** Since the base $B$ ends in $6$, $(B-1)$ must end in $5$. The product $6 \times 5 = 30$, which is also a multiple of $10$.
 * **Note:** The verification above uses the case $k = 1$ (i.e., the last digit).
-For k > 1, if C is an integer then $10^k$ divides $T × (B−1)$, which implies $10$ also divides $T × (B−1)$. Hence the last‑digit condition must still hold. 
+For k > 1, if $C_J$  is an integer then $10^k$ divides $T × (B−1)$, which implies $10$ also divides $T × (B−1)$. Hence the last‑digit condition must still hold. 
 
-*  **conclusion** — that $B$ must end in $0$, $1$, $5$, or $6$ — applies for any tail length $k$.
+**Conclusion** — that $B$ must end in $0$, $1$, $5$, or $6$ — applies for any tail length $k$.
 
 ---
 
@@ -236,35 +237,29 @@ A **Recurstable Number** is a positive integer $B$ such that its power sequence 
 
 
 ### 8.3 Core Properties
-1. **Linear Recurrence:** The Leading Part follows $A_n = B \cdot A_{n-1} + C$.
-2. **Julian's Second Law Requirement:** The base must satisfy $B \pmod{10} \in \{0, 1, 5, 6\}$.
+1. The Leading Part of a Recurstable Number follows $A_n = B \cdot A_{n-1} + C_J$.
 
----
-
-## 9. Julian’s Second Law of Recurstable Numbers
-
-**Theorem Statement:** A positive integer $B$ is a Recurstable Number **if and only if** its terminal digit $B \pmod{10} \in \{0, 1, 5, 6\}$. 
+2. A positive integer $B$ is a Recurstable Number **if and only if** its terminal digit $B \pmod{10} \in \{0, 1, 5, 6\}$. 
 
 **Mathematical Intuition:**
 
 * **Necessity (The DNA Test):** For a tail to be stable, the last digit must satisfy $T_1^2 \equiv T_1 \pmod{10}$. Testing all single digits confirms that only $\{0, 1, 5, 6\}$ possess this inherent stability.
-* **Sufficiency (The Julian Link):** As established in **Corollary II**, these four digits are the only ones that guarantee the **Julian Constant ($C$)** is a whole number. This ensures the carry-over remains rhythmic and the linear recurrence structure never collapses.
-
-**Conclusion:** Julian's Second Law defines the boundaries of Linear Stability. While bases ending in 0, 1, 5, 6 provide the perfect 'mathematical fuel' for Julian’s First Law (Linear Recurrence),
+* **Sufficiency (The Julian Link):** As established in **Corollary II**, these four digits are the only ones that guarantee the **Julian Constant ($C_J$)** is a whole number. This ensures the carry-over remains rhythmic and the linear recurrence structure never collapses.
 
 ---
 
-## 10. Future Work: Toward Julian Carry Dynamics
+
+## 9. Future Work: Toward Julian Carry Dynamics
 
 This research introduces **Julian Carry Dynamics**, a new field of numerical inquiry dedicated to understanding the deterministic influence of terminal digit stability on the evolution of leading numerical sequences. While the current phase focuses on **Static Stability (The Static Regime)**, my future research will venture into investigating how deterministic logic survives under increasing environmental entropy as we approach the **Deterministic Threshold of Chaos**.
 
-### 10.1 Dynamic Carry Observation
+### 9.1 Dynamic Carry Observation
 I will investigate the behavioral response of the Leading Part ($A_n$) when the Tail ($T$) is no longer invariant but follows a periodic or shifting pattern. I hypothesize that the "Head" will exhibit a synchronized **"coupling" effect**, evolving from a simple linear recurrence into a multi-state systemic oscillation. This suggests that the Leading Part maintains a **memory** of the Tail's rhythmic fluctuations.
 
-### 10.2 The "Rhythm in Noise" Hypothesis
+### 9.2 The "Rhythm in Noise" Hypothesis
 The core philosophy of **Julian Carry Dynamics** is that within a closed deterministic system, randomness is merely an analytical illusion; every "noise" is a coded signal. By adjusting the stability of the Tail, I aim to observe the propagation of these signals into the Head. I hypothesize that there exists a **computable upper bound** on the complexity of the leading patterns, determined by the entropy of the terminal sequence.
 
-### 10.3 The Gradient of Chaos Experiment
+### 9.3 The Gradient of Chaos Experiment
 By systematically adjusting the "Confusion Level" (Entropy) of the terminal digits, I intend to map the **Phase Transition** from perfect order to deterministic chaos:
 * **Low Entropy:** **Julian's First Law** (The regime of perfect linear recurrence).
 * **Medium Entropy:** Pattern-switching and quasi-periodic resonance under shifting tail disturbances.
@@ -274,23 +269,21 @@ The ultimate goal of this trajectory is to reveal how the internal logic of numb
 
 ---
 
-## 11. Acknowledgments & Research Methodology
+## 10. Acknowledgments & Research Methodology
 
 1. **Intellectual Property & Naming Rights Assertion:**
 The core theoretical framework and mathematical insights presented in this study are the independent discoveries of **Julian Wong**. As the primary investigator, Julian Wong claims full naming rights and intellectual priority over the following established terminology:
 
       * **Recurstable Numbers:** The overarching classification for integers with stable-tail power sequences.
-      * **Julian’s First Law:** The linear recurrence relation $A_n = B \cdot A_{n-1} + C$.
-      * **The Julian Constant ($C$):** The deterministic integer representing carry-over dynamics.
+      * **Julian’s First Law:** The linear recurrence relation $A_n = B \cdot A_{n-1} + C_J$.
+      * **The Julian Constant ($C_J$):** The deterministic integer representing carry-over dynamics.
       * **The "Quinponent" Pattern:** The foundational discovery specific to powers of 5.
-      * **Julian’s Second Law:** The $\{0, 1, 5, 6\}$ existence criterion for Recurstable Numbers.
-      * **Julian Carry Dynamics:** The prospective field investigating terminal stability as a driver for leading-digit momentum.
+      * **Julian Carry Dynamics:** The prospective field investigating terminal stability as a driver for the evolution of leading numerical sequences.
 
 
 2. **Mathematical Guidance:** I would like to express my deepest gratitude to my mother, **Dong Cang**. She introduced me to formal algebraic methods, guiding me to use variables (such as $A_n$) and powers of ten ($10^k$) to transform my intuitive observations into a rigorous logical framework.
 
 
 3. **Technical Synthesis:** As a 3rd-grade student, I adopted a collaborative approach to formalize my findings. My mother, Dong Cang, acted as my primary scribe, documenting my spoken logic and derivations. To ensure the final manuscript met international scientific standards, I utilized AI assistance to refine the academic terminology (e.g., Corollary, Terminal Stability). While the formal presentation was a collaborative effort, the mathematical discoveries and logical proofs remain my original work.
----
 
 **License:** This project is licensed under the MIT License - see the LICENSE file for details.
