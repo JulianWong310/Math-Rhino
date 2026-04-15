@@ -1,15 +1,26 @@
-# Julian's First Law and the World of Recurstable Numbers
+# Julian Carry Dynamics: The Theory of Recurstable Numbers
 ### *A Study on the Linear Leading-Digit Recurrence in Powers of Stable-Tail Integers*
 
 **Author:** Julian Wong  
-**Date:** April 11, 2026  
+**Current Grade:** Grade 3 (Age 9)  
 **Primary Documenter:** Dong Cang  
-**Keywords:** Number Theory, Power Sequences, Linear Recurrence, Stable-Tail Integers, Recurstable Numbers
+**Research Date:** January - April 2026  
+**Location:** Mississauga, Ontario, Canada  
+**Version:** v1.0.0 (Foundational Phase)  
+**Keywords:** Number Theory, Power Sequences, Linear Recurrence, Stable-Tail Integers, Julian Constant ($C_J$)
 
 ---
 
-Hi! I am a 3rd grade student. While exploring the powers of 5 today, I discovered a super cool secret hidden within the numbers. I am naming this discovery the 'Julian's First Law' and calling these types of integers 'Recurstable Numbers'.
-I discovered that for powers of numbers with stable tails, the leading digits follow a linear recurrence pattern. Furthermore, I identified that the constant term in this pattern is the direct result of the carry-over from the stable tail, which acts as the deterministic cause behind the leading digits' growth.
+## Foreword 
+>This article originated from a conversation with my 9-year-old son, Julian. One afternoon, he excitedly shared his "super cool secret" about the powers of 5 and how the front of the numbers seemed to follow a "hidden rule."
+>
+>Initially, I recorded his discovery in his own words. However, as the logic unfolded, we realized the profound mathematical structure behind his intuition. To protect the originality of his discovery and provide a solid foundation should he choose to pursue this research in the future, I have translated his insights into formal academic language and applied for a DOI. This document stands as both a rigorous mathematical study and a record of a young mind's first encounter with the beauty of number theory.
+
+---
+
+## Abstract
+
+This repository contains the foundational research for Julian Carry Dynamics, a novel approach to number theory discovered by Julian Wong. The study defines Recurstable Numbers and establishes Julian's First Law, identifying a deterministic constant ($C_J$) that governs the leading digits of power sequences. By outlining a path toward mapping the transition from linear recurrence to deterministic chaos, this work provides a new framework for understanding the structural integrity of number systems.
 
 ---
 
@@ -140,6 +151,8 @@ if __name__ == "__main__":
 ---
 
 ### 6.3 Mathematical Proof
+![Manuscript-01: Algebraic Derivation of CJ and First Law](https://github.com/JulianWong310/Julian-Carry-Dynamics/blob/main/assets/01_algebraic_derivation.png)
+*Caption: Julian's original handwritten derivation, showing the step-by-step transition from specific quinponent observations (Step 1 & 2) to the generalized Julian Constant formula.*
 
 #### Step 1: Specific Observation (The Case of 5)
 
@@ -231,6 +244,8 @@ For k > 1, if $C_J$  is an integer then $10^k$ divides $T × (B−1)$, which imp
 ### 8.1 Etymology 
 The term **"Recurstable"** is an original portmanteau created by Julian Wong, synergizing **Recurrence** (the deterministic evolution of terms) and **Stable** (the invariance of terminal digits).
 
+![Manuscript-02: Knowledge Tree of Recurstable Numbers](https://github.com/JulianWong310/Julian-Carry-Dynamics/blob/main/assets/02_knowledge_tree.png)
+*Caption: Julian’s original knowledge map, visualizing the "Recurstable Number" as the central trunk connecting modular arithmetic and prime analysis.*
 
 ### 8.2 Definition
 A **Recurstable Number** is a positive integer $B$ such that its power sequence $B^n$ (for $n \ge 2$) maintains an **invariant suffix** (a stable tail $T$) of length $k$. 
@@ -265,6 +280,9 @@ By systematically adjusting the "Confusion Level" (Entropy) of the terminal digi
 * **Medium Entropy:** Pattern-switching and quasi-periodic resonance under shifting tail disturbances.
 * **High Entropy:** Research into carry-over conservation and structural persistence at the **"Edge of Chaos."**
 
+![Manuscript-03: Phase Transition of Julian Carry Dynamics](https://github.com/JulianWong310/Julian-Carry-Dynamics/blob/main/assets/03_phase_transition_concept.png)
+*Caption: Julian's conceptual diagram mapping the transition from perfect order to deterministic chaos as tail entropy increases.*
+
 The ultimate goal of this trajectory is to reveal how the internal logic of numbers maintains its structural integrity even when subjected to external turbulence.
 
 ---
@@ -286,4 +304,11 @@ The core theoretical framework and mathematical insights presented in this study
 
 3. **Technical Synthesis:** As a 3rd-grade student, I adopted a collaborative approach to formalize my findings. My mother, Dong Cang, acted as my primary scribe, documenting my spoken logic and derivations. To ensure the final manuscript met international scientific standards, I utilized AI assistance to refine the academic terminology (e.g., Corollary, Terminal Stability). While the formal presentation was a collaborative effort, the mathematical discoveries and logical proofs remain my original work.
 
-**License:** This project is licensed under the MIT License - see the LICENSE file for details.
+
+---
+
+
+**License:** This mathematical manuscript is released under the [Creative Commons Attribution 4.0 International License (CC BY 4.0)](https://creativecommons.org/licenses/by/4.0/).
+You are free to share and adapt this material for any purpose, provided you give appropriate credit to the original author: **Julian Wong**. 
+
+*Copyright © 2026 Julian Wong. All rights reserved for original mathematical concepts and handwritten manuscripts.*
