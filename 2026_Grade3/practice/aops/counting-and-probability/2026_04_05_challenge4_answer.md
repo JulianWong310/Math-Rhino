@@ -27,9 +27,10 @@
     * Pairs (Choose 2 from 4): $\binom{4}{2} = 6$
     * Triples (Choose 3 from 4): $\binom{4}{3} = 4$
     * Quad (Choose 4 from 4): $\binom{4}{4} = 1$
-* **Total:** $6 + 4 + 1 = 11$. 
+    * "1": $(1, 2), (1, 3), (1, 7), (1, 13) = 4$
+* **Total:** $6 + 4 + 1 +4 = 15$. 
 * **Wait, what about the 1?** If you multiply $1 \times 2 \times 3$, you get 6. But we already counted $2 \times 3 = 6$. The 1 doesn't add any *new* products.
-* **Answer:** **11**
+* **Answer:** **15**
 
 ---
 
