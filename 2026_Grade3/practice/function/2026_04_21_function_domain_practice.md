@@ -9,7 +9,7 @@ In the mathematical expression for the area of a square, $A = s^2$, which of the
 * (E) The number $2$ is a variable.
 
 **Problem 2**
-Which of the following equations defines $y$ as a function (函数) of $x$?
+Which of the following equations defines $y$ as a function of $x$?
 * (A) $x^2 + y^2 = 25$
 * (B) $x = |y| + 1$
 * (C) $y = \frac{1}{x^2 + 1}$
