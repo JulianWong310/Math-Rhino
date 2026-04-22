@@ -4,8 +4,8 @@
 In the mathematical expression for the area of a square, $A = s^2$, which of the following is true?
 * (A) $A$ is a constant.
 * (B) $s$ is a constant.
-* (C) $A$ is the independent variable (自变量).
-* (D) $s$ is the independent variable (自变量).
+* (C) $A$ is the independent variable.
+* (D) $s$ is the independent variable.
 * (E) The number $2$ is a variable.
 
 **Problem 2**
@@ -17,7 +17,7 @@ Which of the following equations defines $y$ as a function (函数) of $x$?
 * (E) $y^2 = x$
 
 **Problem 3**
-What is the domain (定义域) of the function $f(x) = \frac{100}{x-7}$?
+What is the domain of the function $f(x) = \frac{100}{x-7}$?
 * (A) All real numbers
 * (B) $x > 7$
 * (C) $x < 7$
@@ -68,7 +68,7 @@ If $f(x) = x^2 - 3x$, what is the value of $f(4)$?
 * (E) 28
 
 **Problem 9**
-The domain (定义域) of the function $f(x) = \sqrt{10-x}$ consists of all $x$ such that:
+The domain of the function $f(x) = \sqrt{10-x}$ consists of all $x$ such that:
 * (A) $x \geq 10$
 * (B) $x \leq 10$
 * (C) $x > 10$
