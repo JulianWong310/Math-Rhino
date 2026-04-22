@@ -25,7 +25,7 @@ What is the domain of the function $f(x) = \frac{100}{x-7}$?
 * (E) $x = 7$
 
 **Problem 4**
-Consider the function $g(x) = \sqrt{3x - 12}$. What is the smallest possible value in the domain (定义域)?
+Consider the function $g(x) = \sqrt{3x - 12}$. What is the smallest possible value in the domain?
 * (A) 0
 * (B) 3
 * (C) 4
@@ -33,7 +33,7 @@ Consider the function $g(x) = \sqrt{3x - 12}$. What is the smallest possible val
 * (E) No smallest value exists
 
 **Problem 5**
-Find the domain (定义域) of the function $h(x) = (x-5)^0 + \frac{1}{x}$.
+Find the domain of the function $h(x) = (x-5)^0 + \frac{1}{x}$.
 * (A) $x \neq 0$
 * (B) $x \neq 5$
 * (C) $x \neq 0$ and $x \neq 5$
@@ -52,7 +52,7 @@ If the output $y$ is 10, what was the input $x$?
 * (E) 45
 
 **Problem 7**
-Which of the following values is NOT in the domain (定义域) of $f(x) = \frac{\sqrt{x+1}}{x-2}$?
+Which of the following values is NOT in the domain of $f(x) = \frac{\sqrt{x+1}}{x-2}$?
 * (A) -1
 * (B) 0
 * (C) 1
