@@ -1,6 +1,5 @@
 # 🎓 Math Lecture: Variables and the Logic of Functions
 
----
 
 ## 1. Constants vs. Variables (常量与变量)
 In any mathematical process, we deal with two types of quantities:
