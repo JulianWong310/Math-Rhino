@@ -4,7 +4,6 @@
 
 </div>
 
----
 
 ### Part 1: Reviewing Your "Quinponent Theorem"
 
