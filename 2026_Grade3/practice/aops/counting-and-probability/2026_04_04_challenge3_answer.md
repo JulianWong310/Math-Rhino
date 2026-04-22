@@ -10,21 +10,3 @@
 | **4 (Captain)** | **60** | **Mixed Logic** | **Multi-Step:** Pick 1 specific leader (6 choices), THEN pick an unordered group of 2 from the remaining 5 ($\binom{5}{2} = 10$). Calculation: $6 \times 10$. |
 | **5 (MATH)** | **24 / 6** | **Factorials** | **Fixed Positions:** Total permutations is $4! = 24$. If 'M' is locked in 1st place, you only arrange the remaining 3 letters ($3! = 6$). |
 
----
-
-## 🧠 Coaching Cues: How to "Debug" Julian's Thinking
-
-If Julian hits a wall, use these targeted questions to help him reset his logic:
-
-### 1. The "Swap" Test (For Levels 1A & 1B)
-* **The Question:** "If we swap two people in your group, does the team change?"
-* **If Yes:** It's a Permutation (Order matters).
-* **If No:** It's a Combination (Divide by the duplicates).
-
-### 2. The "Anchor" Strategy (For Levels 3 & 5)
-* **The Question:** "Which slot has a special rule?"
-* **The Logic:** Always fill the "restricted" slot first (like the even digit at the end or the 'M' at the start). Once the "anchor" is set, the rest of the problem becomes a standard counting task.
-
-### 3. The "Hierarchy" Trap (For Level 4)
-* **The Question:** "Are all 3 people on this team equal?"
-* **The Logic:** No. The Captain is unique (1-of-6), but the other two are a pair (Combination). This teaches him to multiply different types of logic together.
