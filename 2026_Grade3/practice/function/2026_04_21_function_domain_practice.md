@@ -4,12 +4,12 @@
 In the mathematical expression for the area of a square, $A = s^2$, which of the following is true?
 * (A) $A$ is a constant.
 * (B) $s$ is a constant.
-* (C) $A$ is the independent variable (自变量).
-* (D) $s$ is the independent variable (自变量).
+* (C) $A$ is the independent variable.
+* (D) $s$ is the independent variable.
 * (E) The number $2$ is a variable.
 
 **Problem 2**
-Which of the following equations defines $y$ as a function (函数) of $x$?
+Which of the following equations defines $y$ as a function of $x$?
 * (A) $x^2 + y^2 = 25$
 * (B) $x = |y| + 1$
 * (C) $y = \frac{1}{x^2 + 1}$
@@ -17,7 +17,7 @@ Which of the following equations defines $y$ as a function (函数) of $x$?
 * (E) $y^2 = x$
 
 **Problem 3**
-What is the domain (定义域) of the function $f(x) = \frac{100}{x-7}$?
+What is the domain of the function $f(x) = \frac{100}{x-7}$?
 * (A) All real numbers
 * (B) $x > 7$
 * (C) $x < 7$
@@ -25,7 +25,7 @@ What is the domain (定义域) of the function $f(x) = \frac{100}{x-7}$?
 * (E) $x = 7$
 
 **Problem 4**
-Consider the function $g(x) = \sqrt{3x - 12}$. What is the smallest possible value in the domain (定义域)?
+Consider the function $g(x) = \sqrt{3x - 12}$. What is the smallest possible value in the domain?
 * (A) 0
 * (B) 3
 * (C) 4
@@ -33,7 +33,7 @@ Consider the function $g(x) = \sqrt{3x - 12}$. What is the smallest possible val
 * (E) No smallest value exists
 
 **Problem 5**
-Find the domain (定义域) of the function $h(x) = (x-5)^0 + \frac{1}{x}$.
+Find the domain of the function $h(x) = (x-5)^0 + \frac{1}{x}$.
 * (A) $x \neq 0$
 * (B) $x \neq 5$
 * (C) $x \neq 0$ and $x \neq 5$
@@ -52,7 +52,7 @@ If the output $y$ is 10, what was the input $x$?
 * (E) 45
 
 **Problem 7**
-Which of the following values is NOT in the domain (定义域) of $f(x) = \frac{\sqrt{x+1}}{x-2}$?
+Which of the following values is NOT in the domain of $f(x) = \frac{\sqrt{x+1}}{x-2}$?
 * (A) -1
 * (B) 0
 * (C) 1
@@ -68,7 +68,7 @@ If $f(x) = x^2 - 3x$, what is the value of $f(4)$?
 * (E) 28
 
 **Problem 9**
-The domain (定义域) of the function $f(x) = \sqrt{10-x}$ consists of all $x$ such that:
+The domain of the function $f(x) = \sqrt{10-x}$ consists of all $x$ such that:
 * (A) $x \geq 10$
 * (B) $x \leq 10$
 * (C) $x > 10$

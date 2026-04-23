@@ -1,20 +1,9 @@
-<style>
-    body {
-        font-size: 16px !important;
-        line-height: 1.4;
-    }
-    h1 { font-size: 2.2em; }
-    h2 { font-size: 1.8em; }
-    p, li { font-size: 16px !important; }
-    code { font-size: 16px; }
-</style>
-
 <div align="center">
 
 ## Recursive Sequences
 
----
 </div>
+
 
 ### Part 1: Reviewing Your "Quinponent Theorem"
 
