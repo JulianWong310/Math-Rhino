@@ -19,7 +19,7 @@ For each pair of $(x, y)$ in your table, mark a point on the coordinate plane.
 * The $y$-value tells you the vertical position.
 
 ### ③ Connect the Dots 
-Join the points in order (from left to right) using a **smooth line** or a **smooth curve (光滑曲线)**.
+Join the points in order (from left to right) using a **smooth line** or a **smooth curve**.
 
 ---
 
@@ -33,7 +33,7 @@ Join the points in order (from left to right) using a **smooth line** or a **smo
 ### Step 2 & 3: Plot and Connect
 
 
-*As you can see, the points form a perfectly **Straight Line (直线)**.*
+*As you can see, the points form a perfectly **Straight Line**.*
 
 ---
 
