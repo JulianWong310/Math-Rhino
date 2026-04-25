@@ -1,4 +1,4 @@
-# Answers Daily Math Practice
+# Answers
 
 ### Part I: Decimal Multiplication and Division
 1. $0.6 \times 0.07 = \mathbf{0.042}$
