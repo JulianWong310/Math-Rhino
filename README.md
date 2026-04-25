@@ -1,5 +1,7 @@
 # Julian's Learning Portfolio
 
+ ![Alt text](https://github.com/JulianWong310/GitHub-Portfolio/blob/main/Assets/SUPER-Julian-12-3-2025.png)
+
 Hi! I'm Julian.  
 I'm a student who loves **math**, **coding**, and **physics**.
 
