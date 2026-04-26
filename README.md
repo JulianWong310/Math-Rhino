@@ -1,36 +1,49 @@
 # Julian's Learning Portfolio
 
- ![Alt text](https://github.com/JulianWong310/GitHub-Portfolio/blob/main/Assets/SUPER-Julian-12-3-2025.png)
+ ![Alt text](https://github.com/JulianWong310/Math-Rhino/blob/main/Assets/math_rhino.png)
 
-Hi! I'm Julian.  
-I'm a student who loves **math**, **coding**, and **physics**.
+# 🦏 Math-Rhino: My Learning Odyssey
 
-This is my **long-term learning archive** (starting from Grade 3).  
-Every year, I add new things I'm learning — from AoPS math and Python to physics and beyond.
+Welcome to **Math-Rhino**! This is my long-term academic archive and daily workspace. Since Grade 3, I have used this space to document my journey through advanced mathematics, competitive programming, and physics.
 
----
-
-## What's Inside (by year)
-
-- **`2025_Grade3/`** – My first steps in Python and math
-- **`2026_Grade3/`** – AoPS (number theory, combinatorics, prealgebra), CCC problems, physics, and more
-- **`Assets/`** – Videos, images, or other resources
-
-*(More years will be added as I grow)*
+> "The Rhino represents persistence and strength—tackling complex problems one step at a time."
 
 ---
 
-## Why this repo?
+## 🗺️ Archive Roadmap
 
-To keep track of what I learn, build, and discover — and to look back one day.
+I organize my progress by academic year to track how my logic and problem-solving skills evolve:
+
+### 📅 [2026_Grade 3] — Current Focus
+Deepening my understanding of formal competitions and theoretical sciences.
+- **AoPS Track:** Number Theory, Combinatorics, and Prealgebra.
+- **Competitive Programming:** Solving **CCC (Canadian Computing Competition)** Junior problems and logic-based puzzles.
+- **Physics:** Exploring classical mechanics, kinematics, and the laws of motion.
+- **Python for Science:** Using Python to automate math proofs and visualize physics simulations.
+
+### 📅 [2025_Grade 3] — The Foundation
+The beginning of my structured learning journey:
+- **First Steps in Python:** Mastering syntax, loops, and basic algorithmic logic.
+- **Math Contests:** Early exposure to Spirit of Math and Kangaroo Math logic challenges.
 
 ---
 
-## My Research
+## 🛠️ Tech Stack & Tools
 
-I also have a separate repo for my original math discoveries:  
-[Julian-Carry-Dynamics](https://github.com/JulianWong310/Julian-Carry-Dynamics)
+- **Programming:** Python 🐍 (Primary tool for CCC and math automation)
+- **Scientific Writing:** Markdown & LaTeX 📑 (For professional-looking proofs and notes)
+- **Environment:** PyCharm / VS Code 💻
+- **Version Control:** Git & GitHub 🚀
 
 ---
 
-*Last updated: April 2026*
+## 🎯 My Vision
+
+1. **Clear Documentation:** I don't just save code; I explain the *logic* behind every solution.
+2. **The "Rhino" Spirit:** Tackling at least one challenging problem every day, no matter how hard it seems.
+3. **Research Linkage:** This archive provides the foundational data for my original research projects, such as [Julian-Carry-Dynamics](https://github.com/JulianWong310/Julian-Carry-Dynamics).
+
+---
+
+Copyright © 2026 Julian Wong.  
+*“The discovery of a new law is just the beginning of a new journey.”*
