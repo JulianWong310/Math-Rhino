@@ -25,14 +25,17 @@ Deepening my understanding of formal competitions and theoretical sciences.
 ### [2025_Grade 3] — The Foundation
 The beginning of my structured learning journey:
 - **First Steps in Python:** Mastering syntax, loops, and basic algorithmic logic.
-- **Math Contests:** Early exposure to Spirit of Math and Kangaroo Math logic challenges.   
+- **Math Contests:** Early exposure to Spirit of Math and Kangaroo Math logic challenges.
+
+  
 *(More years will be added as I grow)*
 
 ---
 
-## Why this repo?
-
-To keep track of what I learn, build, and discover — and to look back one day.
+## Why I made this repo
+- **To Remember:** I want to keep a permanent record of every math proof I write and every program I build. It’s my "external brain."
+- **To Improve:** By looking back at my old code and solutions, I can see how my thinking has changed and find ways to do things even better.
+- **To Connect:** This archive is the foundation for my original research. Everything I learn here helps me discover new things in [Julian-Carry-Dynamics](https://github.com/JulianWong310/Julian-Carry-Dynamics).
 
 ---
 
