@@ -1,6 +1,6 @@
 # 2025 Python Portfolio
 
-This folder contains my Python learning work from 2025.
+This folder contains my Python learning work in 2025.
 It includes small projects and practice exercises as I began learning Python.
 
 ---
