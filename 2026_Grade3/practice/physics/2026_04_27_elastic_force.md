@@ -61,7 +61,7 @@ Within the elastic limit, the greater the force applied to a spring, the longer 
 1. **Check the range and scale division** (measurement range and smallest division).
 2. **Zero the instrument** before use.
 3. **Align the axis** of the dynamometer with the line of action of the force being measured. Make sure the pointer does not rub against the housing.
-4. **Read the scale** with your eyes level with the刻度板.
+4. **Read the scale** with your eyes level with the markings.
 5. **Do not exceed** the measurement range of the dynamometer.
 
 ---
