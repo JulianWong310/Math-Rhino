@@ -12,9 +12,4 @@
 | Q8 | $x = -2 \implies y = 14$; $x = 0 \implies y = 0$; $x = 3 \implies y = -21$ |
 | Q9 | $y = -4x$ is steeper because $|-4| = 4 > |-1| = 1$ |
 | Q10 | $y_1 > y_2$ (since $k < 0$, the function is decreasing) |
-
-**Answer for Q11:**
-- (a) $|c| - 5 = 0 \implies |c| = 5 \implies c = 5$ or $c = -5$; $3(c-5) \neq 0 \implies c \neq 5$; so $c = -5$
-- (b) $y = 3(-5-5)x = 3(-10)x = -30x$
-- (c) Decreasing ($k = -30 < 0$)
-- (d) $y1 < y2$
+| Q11 | (a) $c = -5$ <br> (b) $y = -30x$ <br> (c) Decreasing <br> (d) $y_1 < y_2$ |
