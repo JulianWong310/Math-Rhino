@@ -22,6 +22,10 @@
 * The runner kept moving forward despite the relentless heat of the sun.
 * The baby's relentless crying kept the parents awake for the entire night.
 
+**throbbed with**: To beat or pulse strongly, often with pain or emotion.
+* His leg throbbed with a sharp pain after he fell off the bicycle.
+* The crowded concert hall throbbed with the loud beat of the drums.
+
 **majestic**: Very large and beautiful in a dignified way.
 * The majestic eagle soared high above the snow-covered mountains.
 * We stood in front of the majestic palace and took many photos.
