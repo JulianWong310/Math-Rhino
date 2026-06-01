@@ -1,16 +1,3 @@
-<style>
-    body {
-        font-size: 16px !important;
-        line-height: 1.4;
-    }
-    h1 { font-size: 2.2em; }
-    h2 { font-size: 1.8em; }
-    p, li { font-size: 16px !important; }
-    code { font-size: 16px; }
-</style>
-
-
-
 **brace**（支撑、稳固）：To press something firmly to keep it steady.
 * He had to brace his feet against the wall to push the heavy sofa.
 * You should brace the shelf with strong screws so it doesn't fall.
