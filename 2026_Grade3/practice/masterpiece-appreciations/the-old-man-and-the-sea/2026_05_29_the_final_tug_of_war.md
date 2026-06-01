@@ -39,7 +39,6 @@
 - D) To explain how the fish uses its body to create circles in the water.
 
 **5. Read the following sentence from Paragraph 4:**
-
 *"A man can be destroyed but not defeated."*
 
 **This sentence supports the idea that —**
