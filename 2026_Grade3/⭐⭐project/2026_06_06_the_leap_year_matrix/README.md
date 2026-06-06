@@ -72,6 +72,14 @@ How can we clear out that remaining $+0.12$ day error? Let's extend the pattern 
 
 ---
 
+## My Philosophical Reflection: Why the Official Rules Stop at 400 Years
+
+When we look at history, human civilization has only been around for a few thousand years. 80,000 years is a mind-bogglingly distant future. We do not even know if humans will still be living on Earth by then! 
+
+I think this is exactly why our official calendar rules stop after the 400-year mark. To the people who created the calendar, a 400-year cycle was already long enough to keep things working for many generations. They probably thought that planning for tens of thousands of years into the future was a problem best left for the far-future mathematicians to solve!
+
+---
+
 ## In Conclusion
 
 By adding **1 extra day** at the end of this massive 80,000-year journey, the math balances out beautifully to exactly zero. 
