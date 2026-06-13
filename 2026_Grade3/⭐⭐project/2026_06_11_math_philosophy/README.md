@@ -1,14 +1,14 @@
 # The Ultimate Singularity
 
-One day, I was at the park and told my classmate Chereasa "pinky down" because I did not like the cat side. Then, Chereasa said, "What you say is what you are!" That meant she was calling me a pinky. But wait! If her rule is true, then she became a pinky too. So I am a pinky, she is a pinky, I am a pinky, she is a pinky... it goes on and on forever! 🌀 *(Just like a Wobbuffet bouncing attacks back and forth!)*
+One day, I was at the park and yelled "pinky down" because I did not like cat side. Then, my classmate Chereasa said, "What you say is what you are!" That means she was calling me a pinky. But wait! If her rule is true, then she became a pinky too. So I am a pinky, she is a pinky, I am a pinky, she is a pinky... it goes on and on forever!  🌀*(Just like a Wobbuffet bouncing attacks back and forth!)*
 
-This playground game made me realize a secret rule of the universe: **one can equal infinity!**
+This conversation at the playground made me realize a secret rule of the universe: **one can equal infinity!**
 
 Usually, one and infinity are totally different. One is very small, and infinity is huge. But sometimes in real life, you only do a small action **one** time, and it starts a giant loop or a big change that goes on forever without stopping. 
 
 ---
 
-Think about turning on a light switch. You only flip the switch one time. But after you walk away, the light stays on. It keeps shining for hours, days, or even years. The shining part goes on and on, but you still only did the action one single time. The one little flip lasted for an infinity of light.
+Think about shining a powerful flashlight up into the night sky. You only press the button one time for just one single second. But if that beam of light goes through the atmosphere and leaves Earth without hitting any stars or asteroids, it becomes a time traveler. It will fly through the dark universe at the speed of light forever, heading toward the very edge of space. In a few years, your light will pass Alpha Centauri. In billions of years, it will reach galaxies we cannot even see. That one tiny click of a button creates a time capsule that never stops.
 
 The same thing happens with the real choices I make. For example, I saw this when I decided to join the Mississauga Chess Club. I only signed up **once** on one single afternoon. But that one small choice started an endless future of training, counting strategies, and playing in tournament after tournament! 
 
