@@ -18,5 +18,20 @@ Instead of just "grinding" through numbers, I focus on:
 
 ---
 
-Math is not a dull list of formulas to memorize or a chore to complete; it is an adventure. I have found so much joy, growth, and a true sense of achievement in this journey. I hope my sharing brings you the same experience.
+# Numbers And Riddles
+
+1. $35 \times 55 + 45 \times 135$
+2. $82 \times \frac{2}{79}$
+3. $1095 + 199$
+4. $\frac{1}{a} + \frac{1}{b} + \frac{1}{c} = \frac{1}{3}$ (where $a, b, c$ are distinct integers)
+5. $5232 \div 125$
+6. $175 \times 24$
+7. $115 \div 69$
+8. $a^4 = 390625$
+9. Find the hypotenuse of a right triangle with legs $63$ and $84$.
+
+---
+*Math is not a dull list of formulas to memorize or a chore to complete; it is an **adventure**. I have found so much joy, growth, and a true sense of achievement in this journey. I hope my sharing brings you the same experience.*
+
+
 
