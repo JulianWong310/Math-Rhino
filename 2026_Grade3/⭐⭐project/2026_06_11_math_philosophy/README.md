@@ -8,7 +8,7 @@ Usually, one and infinity are totally different. One is very small, and infinity
 
 ---
 
-Think about shining a powerful flashlight up into the night sky. You only press the button one time for just one single second. But if that beam of light goes through the atmosphere and leaves Earth without hitting any stars or asteroids, it becomes a time traveler. It will fly through the dark universe at the speed of light forever, heading toward the very edge of space. In a few years, your light will pass Alpha Centauri. In billions of years, it will reach galaxies we cannot even see. That one tiny click of a button creates a time capsule that never stops.
+Think about shining a powerful flashlight up into the night sky. You only press the button one time for just one single second. But if that beam of light goes through the atmosphere and leaves Earth without hitting any stars or asteroids, it becomes a time traveler. It will fly through the dark universe at the speed of light forever, heading toward the very edge of space, just because of one tiny click.
 
 The same thing happens with the real choices I make. For example, I saw this when I decided to join the Mississauga Chess Club. I only signed up **once** on one single afternoon. But that one small choice started an endless future of training, counting strategies, and playing in tournament after tournament! 
 
