@@ -18,7 +18,7 @@ Instead of just "grinding" through numbers, I focus on:
 
 ---
 
-# Numbers And Riddles
+## Numbers And Riddles
 
 1. $35 \times 55 + 45 \times 135$
 2. $82 \times \frac{2}{79}$
