@@ -18,12 +18,7 @@ Instead of just "grinding" through numbers, I focus on:
 
 ---
 
-<<<<<<< HEAD:2026_Grade3/⭐⭐project/2026_06_14_math_hacks/README.md
 ## Numbers and Riddles
-=======
-## Numbers And Riddles
-
->>>>>>> ade1ae344a63376ab20bb5a6d9543683748b7a58:2026_Grade3/⭐⭐project/2026_06_14_mathematical_shortcuts/README.md
 1. $35 \times 55 + 45 \times 135$
 2. $82 \times \frac{2}{79}$
 3. $1095 + 199$
